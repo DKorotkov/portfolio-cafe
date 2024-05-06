@@ -1,4 +1,5 @@
 // @use "_include-media" as *;
+@use "functions" as *;
 // -----------------------------------------ПЕРЕМЕННЫЕ-----------------------------------------------
 
 // Breakpoint	   Class infix	      Dimensions
@@ -9,34 +10,17 @@
 // Extra          large	xl	         ≥1200px
 // Extra          extra large	xxl	≥1400px
 
-// $minWidth: 320; // минимальным размер экрана
-// $maxWidth: 1140; // максимальный размер экрана
+// брейкпоинт для header
+$headerBp: 500px;
 
 :root {
    --minWidth: 320px;
-   --maxWidth: 1140px;
+   --maxWidth: 1280px;
 }
 
-// ____________________Брейкпоинты__________________________________
-// $md0: 576;
-// $md1: 576;
-// $md2: 768;
-// $md3: 992;
-// $md4: 1200;
-// $md5: 1400;
-
-// :root {
-//    --md0: 520px;
-//    --md1: 521px;
-//    --md2: 720px;
-//    --md3: 960px;
-//    --md4: 1140px;
-// }
-
-
-
+// _____________________Размеры отступов_________________________________
 :root {
-   // _____________________Размеры отступов_________________________________
+   
       --space-unit: 1em;
    
       --space-xxxxs: calc(0.125 * var(--space-unit));
@@ -52,26 +36,64 @@
       --space-xxxxl: calc(13.75 * var(--space-unit));
    
       --component-padding: var(--space-md);
+}
 
-   // ____________________Цвета_________________________________________
-   --clr-primary: #0a8fc4;
+// ____________________Цвета_________________________________________
+:root {
 
-   --clr-bg-main: #fff;
-   --clr-bg-gray: #f0f0f0;
+   // Оттенки цвета
+   $color-shades: (
+      100: 20%,
+      200: 15%,
+      300: 10%,
+      400: 0,
+      500: 10%,
+      600: 20%,
+      700: 30%,
+   );
+   // Набор цвета который необходимо изменить
+   $colors: (
+      "accent": #FFB577,
+   );
+// Создаем наборы с оттенками
+   @each $keyColor, $valueColor in $colors {
+      @each $keyShades, $valueShades in $color-shades {
+         @if $keyShades < 400 {
+            --clr-#{$keyColor}-#{$keyShades} : #{lighten($valueColor, $valueShades)};
+         }
+         @else if $keyShades == 400 {
+            --clr-#{$keyColor}-#{$keyShades} : #{$valueColor};
+         }
+         @else {
+            --clr-#{$keyColor}-#{$keyShades} : #{darken($valueColor, $valueShades)};
+         }
+      }   
+   }
+// Создаем оригинальный цвет из набора
+   @each $keyColor, $valueColor in $colors {
+      --clr-#{$keyColor} : #{$valueColor};
+   }
+
+   --clr-bg-main: #19161B;
+   --clr-bg-gray: #B8B8B8;
 
    --clr-white: #fff;
    --clr-black: #000;
+   --clr-blue: #C4E4EA;
 
    --clr-success: rgb(38, 203, 124);
    --clr-error: rgb(255, 70, 66);
    --clr-warning: rgb(247, 125, 5);
    --clr-information: rgb(56, 132, 255);
+}
 
-   // _____________________Шрифт_________________________________
-   --ff-main: serif;
+// _____________________Шрифт_________________________________
+:root {
+   --ff-main: 'Poppins';
+   --ff-secondary: 'Playfair Display'
 
    --ff-body: var(--ff-main);
-   --ff-heading: var(--ff-main);
+   --ff-heading: var(--ff-secondary);
    
    --fw-thin: 100;
    --fw-ultra-light: 200;
@@ -83,47 +105,51 @@
    --fw-extra-bold: 800;
    --fw-heavy: 900;
    
-   --fs-12: 0.75rem;
-   --fs-14: 0.875rem;
-   --fs-16: 1rem;
-   --fs-18: 1.125rem;
-   --fs-19: 1.1875rem;
-   --fs-20: 1.25rem;
-   --fs-22: 1.375rem;
-   --fs-24: 1.5rem;
-   --fs-32: 2rem;
-   --fs-35: 2.1875rem;
-   --fs-36: 2.25rem;
-   --fs-40: 2.5rem;
-   --fs-48: 3rem;
-   --fs-50: 3.125rem;
-   --fs-55: 3.4375rem;
-   --fs-58: 3.625rem;
-   --fs-65: 4.0625rem;
-   --fs-72: 4.5rem;
+   // --fs-12: 0.75rem;
+   // --fs-14: 0.875rem;
+   // --fs-16: 1rem;
+   // --fs-18: 1.125rem;
+   // --fs-19: 1.1875rem;
+   // --fs-20: 1.25rem;
+   // --fs-22: 1.375rem;
+   // --fs-24: 1.5rem;
+   // --fs-32: 2rem;
+   // --fs-35: 2.1875rem;
+   // --fs-36: 2.25rem;
+   // --fs-40: 2.5rem;
+   // --fs-48: 3rem;
+   // --fs-50: 3.125rem;
+   // --fs-55: 3.4375rem;
+   // --fs-58: 3.625rem;
+   // --fs-65: 4.0625rem;
+   // --fs-72: 4.5rem;
 
-   --fs-body: var(--fs-16);
-   --fs-primary-heading: var(--fs-16);
-   --fs-primary-btn: var(--fs-16);
-   --fs-nav: var(--fs-16);
+   // Золотое сечение https://grtcalculator.com/
+   --fs-s: #{rem(13)};
+   --fs-m: #{rem(16)};
+   --fs-l: #{rem(20)};
+   --fs-xl: #{rem(26)};
+   --fs-xxl: #{rem(33)};
+   --fs-xxxl: #{rem(42)};
 
+   --lh-s: #{rem(23)};
+   --lh-m: #{rem(27)};
+   --lh-l: #{rem(33)};
+   --lh-xl: #{rem(42)};
+   --lh-xxl: #{rem(52)};
+   --lh-xxxl: #{rem(65)};
+
+
+
+}
    // _____________________Общие настройки_________________________________
-   --sz-navigation-small: 3.75rem;
-   --sz-navigation-large: 4.5rem;
+:root {
+   --fs-body: var(--fs-m);
+   // --sz-navigation-small: 3.75rem;
+   // --sz-navigation-large: 4.5rem;
 
-   --space-container-padding: var(--space-md);
+   // --space-container-padding: var(--space-md);
    
-   --bd-radius: .375rem;
+   // --bd-radius: .375rem;
 }
 
-// @include media('>phone') {
-//    :root {
-//       --fs-600: 2.5rem;
-//       --fs-700: 3.5rem;
-
-//       --fs-body: var(--fs-500);
-//       --fs-nav: var(--fs-300);
-
-//       --space-container-padding: var(--space-lg);
-//    }
-// }

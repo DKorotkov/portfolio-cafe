@@ -1,0 +1,12 @@
+// @use "__config" as *;
+
+.body {
+	font-family: system-ui, system, sans-serif;
+   font-size: var(--fs-m);
+	background-color: var(--clr-bg-main);
+	color: var(--clr-white);
+}
+
+.fonts-loaded .body {
+   font-family: var(--ff-main);
+}

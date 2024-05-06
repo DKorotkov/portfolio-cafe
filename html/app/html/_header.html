@@ -1,17 +1,28 @@
 <header class="header">
-   <a class="skip-nav-link" href="#main-content">Пропустить навигацию</a>
-   <!-- <button class="" aria-label="Открыть основную навгацию" aria-controls="navigation" aria-expanded="false"></button> -->
-   <!-- <button class="hamburger hamburger--squeeze" type="button">
-      <span class="hamburger-box">
-         <span class="hamburger-inner"></span>
-      </span>
-   </button> -->
-   <nav class="header-main__nav nav container" aria-label="Главная навигация">
-      <ul class="nav__box" role="list" id="navigation">
-         <li><a class="nav__item" href="#" aria-current="page">Cсылка</a></li>
-         <li><a class="nav__item" href="#">Cсылка</a></li>
-         <li><a class="nav__item" href="#">Cсылка</a></li>
-         <li><a class="nav__item" href="#">Cсылка</a></li>
-      </ul>
-   </nav>
+	<a class="skip-nav-link" href="#main-content">Skip navigation</a>
+	<div class="container header__container">
+		<a class="logo header__logo" href="/">{Finsweet</a>
+		<button class="hamburger" aria-label="Открыть основную навгацию" aria-controls="navigation" aria-expanded="false">
+			<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4 7L7 7M20 7L11 7" stroke-width="1.5" stroke-linecap="round" />
+				<path d="M20 17H17M4 17L13 17" stroke-width="1.5" stroke-linecap="round" />
+				<path d="M4 12H7L20 12" stroke-width="1.5" stroke-linecap="round" />
+			</svg>
+		</button>
+		<div class="header__space"></div>
+		<nav class="nav" aria-label="Main navigation">
+			<button class="nav__close" data-close="true">
+				<svg role="img" aria-label="close navigation"><use xlink:href="img/icons/icons.svg#close"></use></svg>
+			</button>
+
+			<ul class="nav__box" role="list" id="navigation">
+				<li><a class="nav__item" href="#" aria-current="page">Home</a></li>
+				<li><a class="nav__item" href="#">Menu</a></li>
+				<li><a class="nav__item" href="#">About us</a></li>
+				<li><a class="nav__item" href="#">Our Story</a></li>
+				<li><a class="nav__item" href="#">Blog</a></li>
+				<li><a class="nav__item" href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>

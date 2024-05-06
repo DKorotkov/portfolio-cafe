@@ -1,0 +1,7 @@
+@use "__config" as *;
+
+.logo {
+	font-weight: var(--fw-medium);
+	color: var(--clr-accent);
+	text-decoration: none;
+}
