@@ -1,0 +1,56 @@
+@use "__config" as *;
+
+.contact {
+	display: grid;
+	grid-auto-flow: row;
+   grid-auto-columns: 1fr;
+	background-color: var(--clr-black-300);
+	margin-block: rem(80);
+	overflow: hidden;
+
+		&__details {
+			display: flex;
+			flex-direction: column;
+			gap: rem(32);
+			padding: rem(30);	
+			font-style: normal;
+		}
+
+		&__detail {
+			display: flex;
+			flex-direction: column;
+			gap: rem(6);
+			& > h3 {
+				font-size: var(--fs-l);
+				line-height: var(--lh-l);
+			}
+			& > p, a {
+				color: var(--clr-gray);
+			}
+		}
+
+		&__map {
+			width: 100%;
+			aspect-ratio: 4/3;
+		}
+}
+
+@media (width > 730px) {
+	.contact {
+		grid-template-columns: 1fr 66.6%;
+		margin-block: rem(160);
+
+		&__details {
+			padding-block: rem(80);
+			padding-inline: rem(64);
+		}
+
+		&__detail {
+		}
+
+		&__map {
+			height: 100%;
+			aspect-ratio: auto;
+		}
+}
+}

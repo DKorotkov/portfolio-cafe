@@ -22,6 +22,7 @@ body {
 }
 
 h1, h2, h3, h4 {
+   font-family: var(--ff-secondary);
    text-wrap: balance;
 }
 
@@ -50,6 +51,17 @@ button:where([class]) {
    margin: 0;
    border: none;
    cursor: pointer;
+}
+
+a {
+   color: var(--clr-white);
+   text-decoration: underline;
+   text-decoration-color: transparent;
+   transition: all 0.5s ease-out;
+}
+
+a:hover {
+   text-decoration-color: var(--clr-accent);
 }
 
 // ----------------------------------------------СТАНДАРТНЫЕ КЛАССЫ---------------------------------------------
