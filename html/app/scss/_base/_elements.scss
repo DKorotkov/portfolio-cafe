@@ -53,7 +53,7 @@ button:where([class]) {
    cursor: pointer;
 }
 
-a {
+.a, a {
    color: var(--clr-white);
    text-decoration: underline;
    text-decoration-color: transparent;
