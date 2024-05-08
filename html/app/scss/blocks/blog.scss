@@ -2,6 +2,7 @@
 
 .blog {
 
+
 		&__cards {
 			--column-size: #{rem(290)};
 			// display: grid;
@@ -13,6 +14,10 @@
 		&__card {
 			background-color: var(--clr-black-300);
 			color: var(--clr-gray);
+		}
+
+		&__card-link {
+			text-decoration: none;
 		}
 
 		&__card-wrapper {
