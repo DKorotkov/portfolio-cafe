@@ -2,7 +2,12 @@
 
 .section {
 	margin-block: var(--mg-section);
-	&__header {
+
+	&:first-child {
+		margin-top: 0;
+	}
+	
+	 &__header {
 		margin-bottom: rem(64);
 	}
 }
