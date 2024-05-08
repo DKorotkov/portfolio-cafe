@@ -5,7 +5,7 @@
 	grid-auto-flow: row;
    grid-auto-columns: 1fr;
 	background-color: var(--clr-black-300);
-	margin-block: rem(80);
+	margin-block: var(--mg-section);
 	overflow: hidden;
 
 		&__details {
@@ -35,10 +35,9 @@
 		}
 }
 
-@media (width > 730px) {
+@media (width > $sectionBp) {
 	.contact {
 		grid-template-columns: 1fr 66.6%;
-		margin-block: rem(160);
 
 		&__details {
 			padding-block: rem(80);

@@ -12,6 +12,7 @@
 
 // брейкпоинт для header
 $headerBp: 600px;
+$sectionBp: 430px;
 
 :root {
    --minWidth: 320px;
@@ -146,11 +147,11 @@ $headerBp: 600px;
    // _____________________Общие настройки_________________________________
 :root {
    --fs-body: var(--fs-m);
-   // --sz-navigation-small: 3.75rem;
-   // --sz-navigation-large: 4.5rem;
-
-   // --space-container-padding: var(--space-md);
-   
-   // --bd-radius: .375rem;
+   --mg-section: #{rem(80)};
 }
 
+@media (width > $sectionBp) {
+   :root {
+      --mg-section: #{rem(160)};
+   }
+}
