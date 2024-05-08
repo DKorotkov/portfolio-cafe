@@ -28,11 +28,17 @@
 			font-size: var(--fs-14);
 		}
 
+		
 		&__card-title {
 			font-size: var(--fs-32);
-			color: var(--clr-white);
 			margin-top: rem(8);
-			margin-bottom: rem(16);
+			margin-bottom: rem(16);	
+			@extend a;
+		}
+		
+		&__card:hover &__card-title {
+			
+			 @extend a:hover;
 		}
 
 		&__card-footer {
@@ -42,4 +48,3 @@
 		}
 
 }
-

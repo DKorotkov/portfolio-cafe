@@ -109,9 +109,9 @@ a:hover {
    left: rem(5);
    transform: translateY(-120%);
    transition: transform 300ms ease-in;
-
-   background-color: #fff;
    padding: rem(5) rem(10);
+   border: rem(1) solid var(--clr-accent);
+   background-color: var(--clr-black-300);
 
    &:focus {
       transform: translateY(0);

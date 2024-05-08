@@ -3,7 +3,7 @@
 // Класс для поределения фокуса элементов :focus
 @mixin focus {
    outline: rem(3) solid;
-   outline-offset: rem(3);
+   // outline-offset: rem(3);
    outline-style: auto;
    outline-color: var(--clr-primary);
 }
