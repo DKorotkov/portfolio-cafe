@@ -29,7 +29,6 @@
 			font-size: var(--fs-14);
 		}
 
-		
 		&__card-title {
 			font-size: var(--fs-32);
 			margin-top: rem(8);
@@ -38,7 +37,7 @@
 		}
 		
 		&__card:hover &__card-title {
-			// @extend a:hover;
+			@extend %a_hover;
 		}
 
 		&__card-footer {

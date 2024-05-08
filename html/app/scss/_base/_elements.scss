@@ -53,15 +53,19 @@ button:where([class]) {
    cursor: pointer;
 }
 
-.a, a {
+a {
    color: var(--clr-white);
    text-decoration: underline;
    text-decoration-color: transparent;
    transition: text-decoration-color 0.5s ease-out;
 }
 
-a:hover {
+%a_hover {
    text-decoration-color: var(--clr-accent);
+}
+
+a:hover {
+   @extend %a_hover;
 }
 
 // ----------------------------------------------СТАНДАРТНЫЕ КЛАССЫ---------------------------------------------
