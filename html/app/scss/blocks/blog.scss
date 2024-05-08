@@ -1,0 +1,40 @@
+@use "__config" as *;
+
+.blog {
+
+		&__cards {
+			--column-size: #{rem(290)};
+			// display: grid;
+			// grid-auto-flow: column;
+			gap: rem(32);
+			// grid-column: 3;
+		}
+
+		&__card {
+			background-color: var(--clr-black-300);
+			color: var(--clr-gray);
+		}
+
+		&__card-wrapper {
+			padding: rem(32);
+		}
+
+		&__card-header {
+			font-size: var(--fs-14);
+		}
+
+		&__card-title {
+			font-size: var(--fs-32);
+			color: var(--clr-white);
+			margin-top: rem(8);
+			margin-bottom: rem(16);
+		}
+
+		&__card-footer {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+
+}
+

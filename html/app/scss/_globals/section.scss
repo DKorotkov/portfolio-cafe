@@ -1,0 +1,8 @@
+@use "__config" as *;
+
+.section {
+	margin-block: var(--mg-section);
+	&__header {
+		margin-bottom: rem(64);
+	}
+}
