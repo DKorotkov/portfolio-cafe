@@ -3,6 +3,17 @@
 .header {
 	--icon-size: #{rem(60)};
 	position: relative;
+
+	position: sticky;
+	top: -#{rem(80)};
+	z-index: 1000;
+	@supports (animation-timeline: view()) {
+		animation: stickyNav linear forwards;
+		animation-timeline: view();
+		animation-range-start: 150dvh;
+		animation-range-end: 180dvh;
+	}
+
 	
 	&__container {
 		display: flex;
@@ -19,6 +30,7 @@
 
 @media (width > $headerBp) {
 	.header {
+	
 		&__container {
 			min-height: rem(80);
 		}
@@ -36,5 +48,12 @@
 		&__close {
 			display: none;
 		}
+	}
+}
+
+@keyframes stickyNav {
+	100% {
+		top: 0;
+		background-color: var(--clr-black-300);
 	}
 }
