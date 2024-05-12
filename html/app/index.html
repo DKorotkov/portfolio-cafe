@@ -19,54 +19,79 @@
 	<body class="body">
 		@@include('html/_header.html')
 		<main class="main" id="main-content">
-			<div class="container">
-				<section class="section blog">
-					<h2 class="section__header">Read Our Lastest Blog</h2>
-					<div class="blog__cards grid-auto-columns">
-						<article class="blog__card">
-							<a class="blog__card-link" href="#">
-								<div class="blog__card-wrapper">
-									<time class="blog__card-header" datetime="2021-06-21"> 21 Jun 2021 </time>
-
-									<h1 class="blog__card-title">Extra Thick Homemad Pizza Sauce</h1>
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+			<section class="section quote">
+				<h2 class="clipped">Quote</h2>
+				<div class="out-container">
+					<div class="quote__container container">
+						<figure>
+							<blockquote class="quote__blockquote">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text by dragging and dropping the text</blockquote>
+							<figcaption class="quote__caption">
+								<div class="quote__caption-wr">
+									<p class="quote__caption-name">Joheny Andro</p>
+									<cite class="quote__caption-cite">Bhubaneswar, Odisha</cite>
 								</div>
-								<img class="blog__card-footer" src="./img/blog1.jpeg" alt="coffe" />
-							</a>
-						</article>
-
-						<article class="blog__card">
-							<a class="blog__card-link" href="#">
-								<div class="blog__card-wrapper">
-									<time class="blog__card-header" datetime="2021-06-21"> 21 Jun 2021 </time>
-
-									<h1 class="blog__card-title">The Best Way to Store Fresh Herbs</h1>
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+								<div class="quote__caption-photo">
+									<img class="quote__caption-img" src="./img/Joheny Andro.jpeg" alt="Joheny Andro" />
 								</div>
-								<img class="blog__card-footer" src="./img/blog2.jpeg" alt="coffe" />
-							</a>
-						</article>
-
-						<article class="blog__card">
-							<a class="blog__card-link" href="#">
-								<div class="blog__card-wrapper">
-									<time class="blog__card-header" datetime="2021-06-21"> 21 Jun 2021 </time>
-
-									<h1 class="blog__card-title">5 ways to prepare porridge</h1>
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
-								</div>
-								<img class="blog__card-footer" src="./img/blog3.jpeg" alt="coffe" />
-							</a>
-						</article>
+							</figcaption>
+						</figure>
 					</div>
-				</section>
-			</div>
+					<div class="quote__video-wrapper">
+						<video class="quote__video" preload="./img/video_preload.jpeg" playsinline muted>
+							<source src="./files/video/2464838_grind_grinding_beans_1920x1080.mp4" type="video/mp4" />
+						</video>
+						<button class="quote__video-icon">
+							<svg aria-label="play video" role="img"><use xlink:href="img/icons/icons.svg#play"></use></svg>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="section blog container">
+				<h2 class="section__header">Read Our Lastest Blog</h2>
+				<div class="blog__cards grid-auto-columns">
+					<article class="blog__card">
+						<a class="blog__card-link" href="#">
+							<div class="blog__card-wrapper">
+								<time class="blog__card-header" datetime="2021-06-21"> 21 Jun 2021 </time>
+
+								<h1 class="blog__card-title">Extra Thick Homemad Pizza Sauce</h1>
+								<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+							</div>
+							<img class="blog__card-footer" src="./img/blog1.jpeg" alt="coffe" />
+						</a>
+					</article>
+
+					<article class="blog__card">
+						<a class="blog__card-link" href="#">
+							<div class="blog__card-wrapper">
+								<time class="blog__card-header" datetime="2021-06-21"> 21 Jun 2021 </time>
+
+								<h1 class="blog__card-title">The Best Way to Store Fresh Herbs</h1>
+								<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+							</div>
+							<img class="blog__card-footer" src="./img/blog2.jpeg" alt="coffe" />
+						</a>
+					</article>
+
+					<article class="blog__card">
+						<a class="blog__card-link" href="#">
+							<div class="blog__card-wrapper">
+								<time class="blog__card-header" datetime="2021-06-21"> 21 Jun 2021 </time>
+
+								<h1 class="blog__card-title">5 ways to prepare porridge</h1>
+								<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+							</div>
+							<img class="blog__card-footer" src="./img/blog3.jpeg" alt="coffe" />
+						</a>
+					</article>
+				</div>
+			</section>
 		</main>
 		@@include('html/_footer.html') @@include('html/_scripts.html')
 	</body>
 </html>
 
 <!-- TODO:
-1. Закрепить навигацию в мобильной версии и вводить навигацию в основной
-2. Добавить светлую тему.
+Добавить светлую тему.
  -->

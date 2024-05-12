@@ -1,0 +1,133 @@
+@use "__config" as *;
+
+.quote {
+	position: relative;
+	background-color: var(--clr-black-300);
+
+		&__container {
+			padding-block: rem(60);
+		}
+
+		&__blockquote {
+			font-family: var(--ff-secondary);
+			font-size: var(--fs-32);
+			font-weight: var(--fw-medium);
+			line-height: rem(48);
+			margin-bottom: rem(70);
+		}
+
+		&__blockquote::before {
+			display: block;
+			position: relative;
+			left: -#{rem(5)};
+			height: rem(20);
+			line-height: 1;
+			content: '"';
+			font-family: var(--ff-main);
+			font-size: var(--fs-72);
+			font-style: italic;
+			margin-bottom: rem(40);
+		}
+
+		&__caption {
+			display: flex;
+			justify-content: space-between;
+			
+			border-bottom: rem(1) solid var(--clr-white);
+		}
+
+		&__caption-wr {
+			font-weight: var(--fw-medium);	
+		}
+
+		&__caption-name {
+
+		}
+
+		&__caption-cite {
+			font-size: var(--fs-12);
+			font-style: normal;
+		}
+
+		&__caption-photo {
+			--size: #{rem(48)};
+			--padding: #{rem(20)};
+			width: var(--size);
+			height: var(--size);
+			margin-bottom: var(--padding);
+			
+		}
+
+		&__caption-photo::after {
+			display: block;
+			content: '';
+			width: 100%;
+			height: rem(3);
+			margin-top: calc(var(--padding) - rem(1));
+			background-color: var(--clr-white);
+		}
+		
+		&__caption-img {
+			border-radius: 50%;
+		}
+
+		&__video-wrapper {
+			display: grid;
+			position: static;
+			place-items: center;
+			object-fit: cover;
+		}
+
+		&__video {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			
+		}
+
+		&__video-icon {
+			--size: #{rem(60)};
+			position: absolute;
+			z-index: 1;
+			width: var(--size);
+			height: var(--size);
+			fill: var(--clr-white);
+			transition:  all 0.5s ease;
+			& svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+}
+
+@media (width > 800px ) {
+	.quote {
+		&__container {
+			display: grid;
+			grid-template-columns: 41.6% 1fr;
+			padding-block: rem(80);
+			padding-right: rem(80);
+			margin-block: 0;
+		}
+
+		&__video-wrapper {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 100%;
+		}
+
+		&__video {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+
+		&__video-icon {
+			position: relative;
+		}
+	}
+}

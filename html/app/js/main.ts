@@ -16,3 +16,27 @@ let noda = new ModalDK({
    openBtnsSelector: [".hamburger"],
 	focusTrap: true, 
 })
+
+
+// video
+const quoteVideo = document.querySelector('.quote__video') as HTMLVideoElement
+
+const qutoeVideoIcon = document.querySelector('.quote__video-icon') as HTMLElement
+
+const playQuoteVideo = () => {
+	if (quoteVideo.paused ) { 
+		quoteVideo.play()
+		qutoeVideoIcon.style.opacity = '0'
+	}
+	else {
+		quoteVideo.pause()
+		qutoeVideoIcon.style.opacity = '100'
+	}
+}
+
+quoteVideo.addEventListener('click', playQuoteVideo)
+qutoeVideoIcon.addEventListener('click', playQuoteVideo)
+
+quoteVideo.addEventListener('ended', ()=>{
+	qutoeVideoIcon.style.opacity = '100'
+})
