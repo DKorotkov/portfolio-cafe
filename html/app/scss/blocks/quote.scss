@@ -4,8 +4,16 @@
 	position: relative;
 	background-color: var(--clr-black-300);
 
+		&__figure {
+			width: 80%;
+			margin-inline: auto;
+			padding-block: rem(80);
+			padding-inline: var(--padding-inline);
+		}
+
 		&__container {
-			padding-block: rem(60);
+			display: block;
+			grid-column: full;
 		}
 
 		&__blockquote {
@@ -72,23 +80,24 @@
 		}
 
 		&__video-wrapper {
-			display: grid;
-			position: static;
-			place-items: center;
-			object-fit: cover;
+			display: flex;
+			position: relative;
+			aspect-ratio: 16/9;
+			justify-content: center;
+			align-items: center;			
 		}
 
 		&__video {
-			position: relative;
-			width: 100%;
+			position: absolute;
+			inset: 0;
 			height: 100%;
-			object-fit: contain;
-			
+			object-fit: cover;
+			background-size: cover;
 		}
 
 		&__video-icon {
 			--size: #{rem(60)};
-			position: absolute;
+			position: relative;
 			z-index: 1;
 			width: var(--size);
 			height: var(--size);
@@ -101,33 +110,33 @@
 		}
 }
 
-@media (width > 800px ) {
-	.quote {
-		&__container {
-			display: grid;
-			grid-template-columns: 41.6% 1fr;
-			padding-block: rem(80);
-			padding-right: rem(80);
+
+@media (width > $headerBp ) {
+	.quote {	
 			margin-block: 0;
+
+		&__figure {
+			width: 100%;
+			padding-inline: 0;
+			padding-right: rem(80);
+		}
+
+		&__container {
+			--columns-size: 41.3;
+			display: grid;
+			grid-column: right;
 		}
 
 		&__video-wrapper {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 50%;
-			height: 100%;
+			aspect-ratio: auto;
+			width: 100%;
 		}
 
 		&__video {
-			position: absolute;
 			width: 100%;
 			height: 100%;
-			object-fit: contain;
 		}
 
-		&__video-icon {
-			position: relative;
-		}
 	}
+	
 }

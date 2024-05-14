@@ -19,25 +19,23 @@
 	<body class="body">
 		@@include('html/_header.html')
 		<main class="main" id="main-content">
-			<section class="section quote">
+			<section class="section quote container-grid">
 				<h2 class="clipped">Quote</h2>
-				<div class="out-container">
-					<div class="quote__container container">
-						<figure>
-							<blockquote class="quote__blockquote">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text by dragging and dropping the text</blockquote>
-							<figcaption class="quote__caption">
-								<div class="quote__caption-wr">
-									<p class="quote__caption-name">Joheny Andro</p>
-									<cite class="quote__caption-cite">Bhubaneswar, Odisha</cite>
-								</div>
-								<div class="quote__caption-photo">
-									<img class="quote__caption-img" src="./img/Joheny Andro.jpeg" alt="Joheny Andro" />
-								</div>
-							</figcaption>
-						</figure>
-					</div>
+				<div class="container-grid__full-right quote__container">
+					<figure class="quote__figure">
+						<blockquote class="quote__blockquote">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text by dragging and dropping the text</blockquote>
+						<figcaption class="quote__caption">
+							<div class="quote__caption-wr">
+								<p class="quote__caption-name">Joheny Andro</p>
+								<cite class="quote__caption-cite">Bhubaneswar, Odisha</cite>
+							</div>
+							<div class="quote__caption-photo">
+								<img class="quote__caption-img" src="./img/Joheny Andro.jpeg" alt="Joheny Andro" />
+							</div>
+						</figcaption>
+					</figure>
 					<div class="quote__video-wrapper">
-						<video class="quote__video" preload="./img/video_preload.jpeg" playsinline muted>
+						<video class="quote__video" preload="./img/video_preload.jpeg" style="background-image: url('./img/video_preload.jpeg')" playsinline muted>
 							<source src="./files/video/2464838_grind_grinding_beans_1920x1080.mp4" type="video/mp4" />
 						</video>
 						<button class="quote__video-icon">
@@ -47,7 +45,7 @@
 				</div>
 			</section>
 
-			<section class="section blog container">
+			<section class="section blog container-grid">
 				<h2 class="section__header">Read Our Lastest Blog</h2>
 				<div class="blog__cards grid-auto-columns">
 					<article class="blog__card">
@@ -93,5 +91,6 @@
 </html>
 
 <!-- TODO:
+	не работает появление меню на мобильных
 Добавить светлую тему.
  -->
