@@ -10,4 +10,44 @@
 	 &__header {
 		margin-bottom: rem(64);
 	}
+
+	&__hgroup {
+		display: grid;
+		gap: rem(50);
+		& h2 {
+			text-wrap: pretty;
+		}
+	}
+
+	&__info {
+		color: var(--clr-gray);
+	}
+
+	&__sub-title {
+		display: flex;
+		gap: rem(16);
+		align-items: center;
+		font-family: var(--ff-secondary);
+		color: var(--clr-accent);
+		margin-bottom: rem(24);
+	}
+
+	&__sub-title::after {
+		display: block;
+		content: '';
+		height: rem(1);
+		width: rem(48);
+		background-color: var(--clr-white);
+	}
+}
+
+
+@media (width > $headerBp) {
+	.section {
+		&__hgroup {
+			grid-template-columns: 42% 41.6%;
+			justify-content: space-between;
+			align-items: baseline;
+		}
+	}
 }
