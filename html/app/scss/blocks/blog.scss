@@ -5,11 +5,8 @@
 
 
 		&__cards {
-			--column-size: #{rem(290)};
-			// display: grid;
-			// grid-auto-flow: column;
+			--column-size: #{rem(405)};
 			gap: rem(32);
-			// grid-column: 3;
 		}
 
 		&__card {
