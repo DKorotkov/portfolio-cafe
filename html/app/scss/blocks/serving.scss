@@ -1,0 +1,53 @@
+@use "__config" as *;
+
+.serving {
+
+		&__cards {
+			--column-size:#{rem(405)};
+			column-gap: rem(5);
+			row-gap: rem(5);
+			margin-top: rem(65);
+		}
+
+		&__card {
+			padding: rem(64);
+			background-color: rgba($color: #000000, $alpha: 0.16);
+		}
+
+		&__card-header {}
+
+		&__card-title {
+			display: inline-block;
+			margin-top: em(24, 32);
+			margin-bottom: em(12, 32);
+			font-size: var(--fs-32);
+			font-weight: var(--fw-bold);
+			font-style: normal;
+		}
+
+		&__card-icon {
+			--icon: #{rem(48)};
+			width: var(--icon);
+			height: var(--icon);
+			padding: rem(12);
+			border-radius: 50%;
+			background-color: var(--clr-brown);
+			fill: var(--clr-accent);
+			& > svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&__card-info {
+			color: var(--clr-gray);
+		}
+}
+
+@media (width > $headerBp) {
+	.serving {
+		&__cards {
+			row-gap: 0;
+		}
+	}
+}
