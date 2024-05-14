@@ -5,13 +5,17 @@
 	position: relative;
 
 	position: sticky;
-	top: -#{rem(80)};
+	top: 0;
+	background-color: var(--clr-black-300);
 	z-index: 1000;
+	
 	@supports (animation-timeline: view()) {
+		top: -#{rem(80)};
+		background-color: transparent;
 		animation: stickyNav linear forwards;
 		animation-timeline: view();
-		animation-range-start: 150dvh;
-		animation-range-end: 180dvh;
+		animation-range-start: 150vh;
+		animation-range-end: 180vh;
 	}
 
 	
