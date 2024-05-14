@@ -42,7 +42,7 @@
 }
 
 
-@media (width > $headerBp) {
+@media (width > 850px) {
 	.section {
 		&__hgroup {
 			grid-template-columns: 42% 41.6%;
