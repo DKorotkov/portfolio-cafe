@@ -4,7 +4,7 @@
 	margin-block: var(--mg-section);
 
 	&:first-child {
-		margin-top: 0;
+		margin-top: rem(60);
 	}
 	
 	 &__header {
