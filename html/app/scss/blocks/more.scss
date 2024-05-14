@@ -1,0 +1,46 @@
+@use "__config" as *;
+
+.more {
+
+		&__container {
+			
+		}
+
+		&__info {
+			margin: rem(32) 0 rem(40);
+		}
+
+		&__title {
+		}
+
+		&__feature-list {
+			--column-size: #{rem(190)};
+			gap: rem(32);
+			margin-bottom: rem(32);
+		}
+
+		&__feature-item {
+			color: var(--clr-gray);
+		}
+
+		&__feature-header {
+			display: flex;
+			align-items: baseline;
+			gap: rem(5);			
+			color: var(--clr-blue);
+			font-weight: var(--fw-medium);
+			font-size: var(--fs-24);
+		}
+
+		&__feature-icon {
+			fill: var(--clr-accent);
+			width: rem(13);
+			height: rem(31);
+		}
+
+		&__feature-info {
+			margin-top: rem(15);
+			line-height: var(--lh-m);
+		}
+
+}

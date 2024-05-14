@@ -40,6 +40,11 @@
 		width: rem(48);
 		background-color: var(--clr-white);
 	}
+
+	&__2columns-images {
+		display: none;
+	}
+
 }
 
 
@@ -49,6 +54,28 @@
 			grid-template-columns: 42% 41.6%;
 			justify-content: space-between;
 			align-items: baseline;
+		}
+		
+		&__2columns {
+			display: grid;
+			grid-template-columns: 1fr 41.6%;
+			column-gap: rem(100);
+		}
+
+		&__2columns--right {
+			grid-template-columns: 1fr 41.6%;
+		}
+
+		&__2columns--left {
+			grid-template-columns: 41.6% 1fr;
+		}
+
+		&__2columns-images {
+			display: flex;
+			gap: 12%;
+			& > :first-child {
+				margin-top: rem(80);
+			}
 		}
 	}
 }
