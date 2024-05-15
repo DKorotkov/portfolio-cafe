@@ -32,6 +32,9 @@
 		justify-content: space-between;
 		font-size: var(--fs-20);
 		margin: rem(24) rem(32);
+		& > h3 {
+			font-size: var(--fs-20);
+		}
 	}
 
 	&__item-price {

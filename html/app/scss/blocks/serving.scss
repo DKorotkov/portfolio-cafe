@@ -10,7 +10,7 @@
 		}
 
 		&__card {
-			padding: rem(64);
+			padding: rem(32);
 			background-color: rgba($color: #000000, $alpha: 0.16);
 		}
 
@@ -48,6 +48,9 @@
 	.serving {
 		&__cards {
 			row-gap: 0;
+		}
+		&__card {
+			padding: rem(64);
 		}
 	}
 }
