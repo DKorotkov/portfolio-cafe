@@ -1,0 +1,73 @@
+@use "__config" as *;
+
+.sheader {
+
+	&__container {
+		gap: rem(32);
+	}
+
+	&__hgroup {
+		margin-bottom: rem(32);
+	}
+
+	&__header {
+		margin-bottom: em(16, 55);
+		font-size: var(--fs-55);
+	}
+	
+	&__info {
+		padding-bottom: rem(75);
+	}
+
+	&__bg-pic {
+		width: 100%;
+		height: rem(250);
+		margin-block: rem(32);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__infos {
+		display: grid;
+		gap: rem(16);
+		margin-top: rem(40);
+		color: var(--clr-gray);
+		line-height: rem(30);
+	}
+
+	&__infos-header {
+		color: var(--clr-white);
+		font-family: var(--ff-secondary);
+		font-size: var(--fs-20);
+		font-weight: var(--fw-bold);
+	}
+
+	&__infos-link {
+		color: currentColor;
+	}
+
+	&__addit {
+		position: relative;
+	}
+
+	&__img {
+		display: block;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+@media (width > 850px) {
+	.sheader {
+		&__info {
+			padding-block: rem(75);
+		}
+
+		&__bg-pic {
+			display: none;
+		}
+	}
+}

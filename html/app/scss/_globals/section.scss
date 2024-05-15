@@ -58,14 +58,14 @@
 		
 		&__2columns {
 			display: grid;
-			grid-template-columns: 1fr 41.6%;
+			grid-template-columns: 1fr 1fr;
 			column-gap: rem(100);
 		}
-
+		// меньше колонка справа
 		&__2columns--right {
 			grid-template-columns: 1fr 41.6%;
 		}
-
+		// меньше колонка слева
 		&__2columns--left {
 			grid-template-columns: 41.6% 1fr;
 		}
