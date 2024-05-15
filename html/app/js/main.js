@@ -12,7 +12,7 @@ loadFont();
 let noda = new ModalDK({
     selector: '.nav',
     openBtnsSelector: [".hamburger"],
-    focusTrap: true,
+    focusTrap: false,
 });
 // video
 const quoteVideo = document.querySelector('.quote__video');
