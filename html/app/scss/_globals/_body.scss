@@ -3,8 +3,8 @@
 .body {
 	font-family: system-ui, system, sans-serif;
    font-size: var(--fs-m);
-	background-color: var(--clr-bg-main);
-	color: var(--clr-white);
+	background-color: var(--scheme-bg-main);
+	color: var(--scheme-text);
 }
 
 .fonts-loaded .body {

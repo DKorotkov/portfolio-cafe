@@ -10,8 +10,11 @@
 		}
 
 		&__card {
-			background-color: var(--clr-black-300);
-			color: var(--clr-gray);
+			background-color: var(--scheme-bg-add);
+			color: var(--scheme-text);
+			a {
+				color: currentColor;
+			}
 		}
 
 		&__card-link {
@@ -31,14 +34,20 @@
 		}
 
 		&__card-title {
+			color: var(--scheme-headers) !important;
+			
 			font-size: var(--fs-32);
 			margin-top: rem(8);
 			margin-bottom: rem(16);
 			@extend a;
+			
 		}
 		
 		&__card:hover &__card-title {
 			@extend %a_hover;
+			@media (prefers-color-scheme: light) {
+				text-decoration-color: var(--clr-black-300) !important; 
+			}
 		}
 
 		&__card-footer {

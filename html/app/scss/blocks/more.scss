@@ -20,14 +20,14 @@
 		}
 
 		&__feature-item {
-			color: var(--clr-gray);
+			color: var(--scheme-text);
 		}
 
 		&__feature-header {
 			display: flex;
 			align-items: baseline;
 			gap: rem(5);			
-			color: var(--clr-blue);
+			color: var(--scheme-blue);
 			font-weight: var(--fw-medium);
 			font-size: var(--fs-24);
 		}

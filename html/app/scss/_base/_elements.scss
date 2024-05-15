@@ -18,10 +18,11 @@ body {
 
 *::selection { // Цвет выделения текста
    background-color: var(--clr-accent);
-   color: var(--clr-bg-main);
+   color: var(--scheme-bg-main);
 }
 
 h1, h2, h3, h4 {
+   color: var(--scheme-headers);
    font-family: var(--ff-secondary);
    text-wrap: balance;
 }
@@ -54,7 +55,7 @@ button:where([class]) {
 }
 
 a {
-   color: var(--clr-white);
+   color: var(--scheme-headers);
    text-decoration: underline;
    text-decoration-color: transparent;
    transition: text-decoration-color 0.5s ease-out;
@@ -164,7 +165,7 @@ a:hover {
    transition: transform 300ms ease-in;
    padding: rem(5) rem(10);
    border: rem(1) solid var(--clr-accent);
-   background-color: var(--clr-black-300);
+   background-color: var(--scheme-bg-add);
 
    &:focus {
       transform: translateY(0);

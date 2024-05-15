@@ -9,7 +9,7 @@
 		font-family: var(--ff-secondary);
 		font-size: var(--fs-14);
 		font-weight: var(--fw-bold);
-		color: var(--clr-blue);
+		color: var(--scheme-blue);
 		margin-top: rem(32);
 		margin-bottom: rem(80);
 	}
@@ -24,7 +24,7 @@
 	&__item {
 		display: flex;
 		flex-direction: column-reverse;
-		background-color: var(--clr-black-300);
+		background-color: var(--scheme-bg-add);
 	}
 
 	&__item-header {
@@ -38,6 +38,7 @@
 	}
 
 	&__item-price {
+		color: var(--scheme-headers);
 		font-weight: var(--fw-medium);
 	}
 

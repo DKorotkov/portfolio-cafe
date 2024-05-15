@@ -32,12 +32,12 @@
 		display: grid;
 		gap: rem(16);
 		margin-top: rem(40);
-		color: var(--clr-gray);
+		color: var(--scheme-text);
 		line-height: rem(30);
 	}
 
 	&__infos-header {
-		color: var(--clr-white);
+		color: var(--scheme-headers);
 		font-family: var(--ff-secondary);
 		font-size: var(--fs-20);
 		font-weight: var(--fw-bold);

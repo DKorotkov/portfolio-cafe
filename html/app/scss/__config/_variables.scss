@@ -45,11 +45,14 @@ $sectionBp: 430px;
    --clr-bg-main: #19161B;
    --clr-black-300: #1F1D21;
    --clr-gray: #B8B8B8;
+   --clr-gray-400: #494848;
+   --clr-gray-100: #fafafa;
    --clr-brown: #261E1D;
 
    --clr-white: #fff;
    --clr-black: #000;
    --clr-blue: #C4E4EA;
+   --clr-blue-600: #368393;
 
    --clr-success: rgb(38, 203, 124);
    --clr-error: rgb(255, 70, 66);
@@ -154,5 +157,26 @@ $sectionBp: 430px;
 @media (width > $sectionBp) {
    :root {
       --mg-section: #{rem(160)};
+   }
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      --scheme-bg-main: var(--clr-bg-main);
+      --scheme-headers: var(--clr-white);
+      --scheme-text: var(--clr-gray);
+      --scheme-bg-add: var(--clr-black-300);
+      --scheme-blue: var(--clr-blue);
+   }
+}
+
+@media (prefers-color-scheme: light) {
+   :root {
+      --scheme-bg-main: var(--clr-gray-100);
+      --scheme-headers: var(--clr-black);
+      --scheme-text: var(--clr-gray-400);
+      --scheme-bg-add: var(--clr-accent-500);
+      --scheme-blue: var(--clr-blue-600);
+
    }
 }

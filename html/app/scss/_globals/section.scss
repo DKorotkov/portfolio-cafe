@@ -20,7 +20,7 @@
 	}
 
 	&__info {
-		color: var(--clr-gray);
+		color: var(--scheme-text);
 	}
 
 	&__sub-title {
@@ -38,7 +38,7 @@
 		content: '';
 		height: rem(1);
 		width: rem(48);
-		background-color: var(--clr-white);
+		background-color: var(--scheme-headers);
 	}
 
 	&__2columns-images {

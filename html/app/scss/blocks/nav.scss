@@ -38,7 +38,7 @@
 
 	&__item {
 			display: inline-block;
-			color: var(--clr-white);
+			color: var(---scheme-headers);
 			min-width: max-content;
 			width: 100%;
 			font-size: var(--fs-xl);
@@ -56,7 +56,7 @@
 	&__close svg {
 		width: 100%;
 		height: 100%;
-		fill: var(--clr-white);
+		fill: var(--scheme-headers);
 	}
 }
 

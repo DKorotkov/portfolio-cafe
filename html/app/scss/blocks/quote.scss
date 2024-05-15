@@ -2,7 +2,7 @@
 
 .quote {
 	position: relative;
-	background-color: var(--clr-black-300);
+	background-color: var(--scheme-bg-add);
 
 		&__figure {
 			width: 80%;
@@ -17,6 +17,7 @@
 		}
 
 		&__blockquote {
+			color: var(--scheme-headers);
 			font-family: var(--ff-secondary);
 			font-size: var(--fs-32);
 			font-weight: var(--fw-medium);
@@ -41,7 +42,7 @@
 			display: flex;
 			justify-content: space-between;
 			
-			border-bottom: rem(1) solid var(--clr-white);
+			border-bottom: rem(1) solid var(--scheme-headers);
 		}
 
 		&__caption-wr {
@@ -49,7 +50,7 @@
 		}
 
 		&__caption-name {
-
+			color: var(--scheme-headers);
 		}
 
 		&__caption-cite {
@@ -72,7 +73,7 @@
 			width: 100%;
 			height: rem(3);
 			margin-top: calc(var(--padding) - rem(1));
-			background-color: var(--clr-white);
+			background-color: var(--scheme-headers);
 		}
 		
 		&__caption-img {
@@ -101,7 +102,7 @@
 			z-index: 1;
 			width: var(--size);
 			height: var(--size);
-			fill: var(--clr-white);
+			fill: var(--scheme-headers);
 			transition:  all 0.5s ease;
 			& svg {
 				width: 100%;
