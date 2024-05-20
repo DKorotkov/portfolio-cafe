@@ -161,13 +161,15 @@ a:hover {
 .skip-nav-link {
    position: absolute;
    left: rem(5);
-   transform: translateY(-120%);
-   transition: transform 300ms ease-in;
    padding: rem(5) rem(10);
    border: rem(1) solid var(--clr-accent);
    background-color: var(--scheme-bg-add);
+   opacity: 0;
+   transform: translateY(-120%);
+   transition: transform 300ms ease-in;
 
    &:focus {
+      opacity: 1;
       transform: translateY(0);
    }
 }

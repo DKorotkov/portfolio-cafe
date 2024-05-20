@@ -1,6 +1,7 @@
 import { loadFont } from './modules/_fonts.js';
 import 'focus-visible'; //Скрипт полифил для корректной работы не стадартного фокуса (focus-visible)
 import { ModalDK } from './modules/_modal.js';
+import { SchemeSwitcher } from './modules/sheme-switcher.js';
 // import FormValid from "./modules/_formValidation" // Загрузка класса Валидации форм - FormValid.init()
 // import { Accordion, AccordionBtn } from './modules/_accordion' // Загузка класса Аккардион
 // import SelectDk from './modules/_select' //Загрузка класса кастомизации Select SelectDK.init();
@@ -31,4 +32,9 @@ quoteVideo.addEventListener('click', playQuoteVideo);
 qutoeVideoIcon.addEventListener('click', playQuoteVideo);
 quoteVideo.addEventListener('ended', () => {
     qutoeVideoIcon.style.opacity = '100';
+});
+// scheme switcher
+const schemeSwitcherEl = document.querySelector('.scheme-switcher');
+const schemeSwitcher = new SchemeSwitcher({
+    el: schemeSwitcherEl
 });

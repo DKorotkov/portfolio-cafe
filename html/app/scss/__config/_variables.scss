@@ -160,23 +160,12 @@ $sectionBp: 430px;
    }
 }
 
-@media (prefers-color-scheme: dark) {
-   :root {
-      --scheme-bg-main: var(--clr-bg-main);
-      --scheme-headers: var(--clr-white);
-      --scheme-text: var(--clr-gray);
-      --scheme-bg-add: var(--clr-black-300);
-      --scheme-blue: var(--clr-blue);
-   }
-}
-
-@media (prefers-color-scheme: light) {
-   :root {
-      --scheme-bg-main: var(--clr-gray-100);
-      --scheme-headers: var(--clr-black);
-      --scheme-text: var(--clr-gray-400);
-      --scheme-bg-add: var(--clr-accent-500);
-      --scheme-blue: var(--clr-blue-600);
-
-   }
+// _____________________Цветовые схемы_________________________________
+:root {
+   --scheme-bg-main: light-dark(var(--clr-gray-100),  var(--clr-bg-main)) ;
+   --scheme-headers: light-dark(var(--clr-black), var(--clr-white));
+   --scheme-text: light-dark(var(--clr-gray-400), var(--clr-gray));
+   --scheme-bg-add: light-dark(var(--clr-accent-500), var(--clr-black-300));
+   --scheme-blue: light-dark(var(--clr-blue-600), var(--clr-blue));
+   color-scheme: light dark;
 }
