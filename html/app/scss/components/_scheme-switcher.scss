@@ -12,13 +12,14 @@
 	position: relative;
 	justify-content: space-between;
 	align-items: center;
-	border: rem(1) solid var(--scheme-headers);
+	color: var(--scheme-headers);
+	font-size: var(--icon-size);
+	border: rem(1) solid currentColor;
 	border-radius: var(--bd-radius);
-	padding: 0;
 	margin: 0;
 	padding: var(--padding-block);
 	overflow: hidden;
-
+	
 	// добавляем промежуток между икноками при открытии
 	&:focus-within {
 		padding: var(--padding-block) var(--paddin-inline);
@@ -74,7 +75,7 @@
 		height: var(--icon-size);
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: rem(14);
+		background-size: calc(var(--icon-size) - #{rem(2)});
 		cursor: pointer;
 		transition: all 0.5s ease;
 		transition-delay: 300ms;
@@ -118,6 +119,31 @@
 
 	&__radio--dark:checked ~ &__focus::after {
 		margin-left: calc(var(--step) * 2);
+	}
+}
+
+@media (pointer:coarse) {
+	.scheme-switcher {
+
+		&__focus::after {
+			opacity: 1;
+		}
+
+		&__radio,
+		&__focus,
+		&__focus::after {
+			transition: 0.3s !important;
+			transition-delay: 0 !important;
+		}
+
+		&__radio:not(:checked) {
+			width: var(--icon-size);
+			opacity: 1;
+		}
+
+		&__radio:not(:first-of-type, :last-of-type) {
+			margin-inline: var(--padding-block) !important;
+		}
 	}
 }
 

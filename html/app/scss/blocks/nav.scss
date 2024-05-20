@@ -38,7 +38,7 @@
 
 	&__item {
 			display: inline-block;
-			color: var(---scheme-headers);
+			color: var(--scheme-headers);
 			min-width: max-content;
 			width: 100%;
 			font-size: var(--fs-xl);
@@ -57,6 +57,11 @@
 		width: 100%;
 		height: 100%;
 		fill: var(--scheme-headers);
+	}
+
+	&__scheme {
+		--icon-size: #{rem(32)} !important;
+		justify-self: center;
 	}
 }
 
@@ -95,15 +100,22 @@
 
 		&__content {
 			display: block;
-			position: static;
+			position: relative;
 			background-color: transparent;
 			width: auto;
 			height: auto;
-			overflow-y: auto;
+			overflow-y: visible;
 		}
 
 		&__close {
 			display: none;
+		}
+
+		&__scheme {
+			--icon-size: #{rem(16)} !important;
+			position: absolute !important;
+			top: -2px;
+			right: 0;
 		}
 	}
 }
