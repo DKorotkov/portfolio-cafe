@@ -1,0 +1,72 @@
+@use "__config" as *;
+
+.history {
+	margin-bottom: rem(160);
+	
+
+	&__container {
+		padding: rem(80);
+		background-color: var(--scheme-bg-add);
+	}
+
+	&__title {
+		font-size: var(--fs-32);
+		margin-bottom: rem(70);
+	}
+
+	&__list {
+		--column-size: #{rem(240)};
+		gap: 0;
+	}
+
+	&__item {
+		--item-m: #{rem(16)};
+		--padding-item: #{rem(35)};
+		padding-bottom: var(--padding-item);
+		padding-left: var(--padding-item);
+		border-left: rem(1) dashed var(--scheme-text);
+	}
+
+	&__item-year {
+		position: relative;
+		color: var(--scheme-headers);
+		font-size: var(--fs-32);
+		font-weight: var(--fw-semi-bold);
+		margin-bottom: var(--item-m);
+	}
+
+	&__item-year::before {
+		--space-width: #{rem(46)};
+		--space-height: #{rem(7)};
+		display: block;
+		position: absolute;
+		left: calc(var(--padding-item) * -1 - var(--space-height) /2);
+		content: '';
+		width: var(--space-height);
+		height: var(--space-width);
+		background-color: var(--clr-accent);
+	}
+
+	&__item-title {
+		margin-bottom: var(--item-m);
+		font-size: var(--fs-20);
+	}
+}
+
+@media (width > $headerBp) {
+	.history {
+		&__item {
+			padding-top: var(--padding-item);
+			padding-right: var(--padding-item);
+			padding-left: 0;
+			border-left: none;
+			border-top: rem(1) dashed var(--scheme-text);
+		}
+		&__item-year::before {
+			top: calc(var(--padding-item) * -1 - var(--space-height) /2);
+			left: 0;
+			width: var(--space-width);
+			height: var(--space-height);
+		}
+	}
+}

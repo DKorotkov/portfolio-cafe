@@ -1,0 +1,43 @@
+@use "__config" as *;
+
+.slogan {
+
+		&__container {
+			position: relative;
+			padding: rem(124) rem(80);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		&__container::before {
+			display: block;
+			position: absolute;
+			content: '';
+			inset: 0;
+			background: linear-gradient(145deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0) 80%);
+			
+		}
+
+		&__wrapper {
+			position: relative;
+			z-index: 1;
+		}
+
+		&__header {
+			font-size: var(--fs-48);
+			margin-bottom: rem(24);
+			mark {
+				background: none;
+				color: var(--clr-accent);
+			}
+		}
+}
+
+@media (width > $headerBp) {
+	.slogan {
+		&__wrapper {
+			width: 50%;
+		}
+	}
+}

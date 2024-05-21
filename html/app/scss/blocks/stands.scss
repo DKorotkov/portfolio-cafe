@@ -1,0 +1,12 @@
+@use "__config" as *;
+
+.stands {
+	&__title {
+		margin-bottom: rem(48);
+	}
+	
+	&__subtitle {
+		font-size: var(--fs-32);
+		margin-bottom: em(24, 32);
+	}
+}
