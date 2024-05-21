@@ -5,7 +5,7 @@
 	
 
 	&__container {
-		padding: rem(80);
+		padding: rem(40);
 		background-color: var(--scheme-bg-add);
 	}
 
@@ -55,6 +55,10 @@
 
 @media (width > $headerBp) {
 	.history {
+		&__container {
+		padding: rem(80);
+	}
+
 		&__item {
 			padding-top: var(--padding-item);
 			padding-right: var(--padding-item);

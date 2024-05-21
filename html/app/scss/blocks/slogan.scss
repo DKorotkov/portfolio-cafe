@@ -4,7 +4,7 @@
 
 		&__container {
 			position: relative;
-			padding: rem(124) rem(80);
+			padding: rem(80) rem(50);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
@@ -38,12 +38,17 @@
 
 @media (width > $headerBp) {
 	.slogan {
+		&__container {
+			padding: rem(124) rem(80);
+		}
+
+		&__container::before {
+			background: linear-gradient(145deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0) 80%);
+		}
+
 		&__wrapper {
 			width: 50%;
 		}
-		&__container::before {
-			background: linear-gradient(145deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0) 80%);
-			
-		}
+		
 	}
 }
