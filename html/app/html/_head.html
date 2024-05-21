@@ -76,6 +76,13 @@
 			html.classList.remove('fonts-loading')
 			html.classList.add('fonts-loaded')
 		}
+
+		// Загружаем цветовую схему
+		const clrScheme = localStorage.getItem('color-scheme')
+		if (clrScheme) {
+			console.log(clrScheme)
+			document.querySelector('html').style.colorScheme = clrScheme
+		}
 	</script>
 	<title>@@site_name | @@title</title>
 </head>
