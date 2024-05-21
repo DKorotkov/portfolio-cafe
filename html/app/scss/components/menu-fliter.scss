@@ -1,0 +1,26 @@
+@use "__config" as *;
+
+.menu-fliter {
+	display: flex;
+	flex-wrap: wrap;
+	border: none;
+	gap: rem(32);
+	font-family: var(--ff-secondary);
+	font-size: var(--fs-20);
+	font-weight: var(--fw-bold);
+
+	&__input {
+		appearance: none;
+		
+	}
+
+	&__input + * {
+		cursor: pointer;
+		transition: color 300ms ease;
+	}
+
+	&__input:checked + * {
+		color: var(--scheme-headers);
+	}
+	
+}

@@ -1,0 +1,33 @@
+@use "__config" as *;
+
+.page-menu {
+
+	&__hgroup {
+		margin-bottom: rem(70);
+	}
+	 
+	&__header {
+		font-size: var(--fs-50);
+	}
+
+	&__aside {
+		position: sticky;
+		top: rem(79);
+		z-index: 1;
+		background-color: var(--scheme-bg-main);
+		margin-bottom: rem(30);
+	}
+
+}
+
+@media (width > $headerBp) {
+	.page-menu {
+		&__hgroup {
+			margin-bottom: rem(144);
+		}
+
+		&__aside {
+			margin-bottom: rem(64);
+		}
+	}
+}
