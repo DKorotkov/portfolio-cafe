@@ -15,18 +15,20 @@
 			position: absolute;
 			content: '';
 			inset: 0;
-			background: linear-gradient(145deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0) 80%);
+			background: linear-gradient(145deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0) 100%);
 			
 		}
 
 		&__wrapper {
 			position: relative;
 			z-index: 1;
+			color: var(--clr-gray);
 		}
 
 		&__header {
 			font-size: var(--fs-48);
 			margin-bottom: rem(24);
+			color: var(--clr-white);
 			mark {
 				background: none;
 				color: var(--clr-accent);
@@ -38,6 +40,10 @@
 	.slogan {
 		&__wrapper {
 			width: 50%;
+		}
+		&__container::before {
+			background: linear-gradient(145deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0) 80%);
+			
 		}
 	}
 }

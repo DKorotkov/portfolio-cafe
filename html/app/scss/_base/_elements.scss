@@ -210,7 +210,7 @@ a:hover {
 :where(h1) {
    font-family: var(--ff-heading);
    font-size: var(--fs-48);
-
+   
    @media (min-width: (50rem)) { 
       font-size: var(--fs-72);
       font-weight: var(--fw-bold);
