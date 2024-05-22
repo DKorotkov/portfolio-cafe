@@ -1,0 +1,23 @@
+@use "__config" as *;
+
+.story {
+
+		&__title {
+			font-size: var(--fs-55);
+			margin-bottom: em(24, 55);
+		}
+
+		&__hgroup {
+			margin-bottom: rem(32);
+		}
+
+		&__subtitle {
+			font-size: var(--fs-32);
+			margin-bottom: em(24, 32);
+		}
+
+		&__info:not(:last-child) {
+			margin-bottom: rem(16);
+		}
+
+}

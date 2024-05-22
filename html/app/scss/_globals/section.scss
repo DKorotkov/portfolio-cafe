@@ -23,6 +23,11 @@
 		color: var(--scheme-text);
 	}
 
+	&__mark {
+		background: none;
+		color: var(--clr-accent);
+	}
+
 	&__sub-title {
 		display: flex;
 		gap: rem(16);
