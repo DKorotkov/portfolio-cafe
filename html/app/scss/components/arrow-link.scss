@@ -1,0 +1,13 @@
+@use "__config" as *;
+
+.arrow-link {
+	--arrow-color: var(--clr-accent);
+	display: inline-flex;
+	align-items: baseline;
+	gap: rem(8);
+	& svg {
+		width: em(24, 16);
+		height: em(8, 16);
+		fill: var(--arrow-color);
+	}	
+}

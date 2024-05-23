@@ -1,0 +1,11 @@
+@use "__config" as *;
+
+.blog-page {
+
+	&__title {
+		font-size: var(--fs-48);
+		margin-bottom: em(64, 48);
+		margin-inline: auto;
+	}
+}
+

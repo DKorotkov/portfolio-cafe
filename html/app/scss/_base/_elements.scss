@@ -96,6 +96,7 @@ a:hover {
 }
 
 .container-grid {
+   // justify-items: center - не дает содержимому расстягиваться на всю допустимую ширину
   --padding-inline: 1rem;
   
   display: grid;
