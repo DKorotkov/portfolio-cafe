@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<meta content="true" name="HandheldFriendly">
+	
+	
+	
+	<meta name="MobileOptimized" content="width">
+	
+	<meta content="yes" name="apple-mobile-web-app-capable">
+
+	
+	
+	
+	
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="description" content="description">
+	
+	<meta name="keywords" content="keywords">
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	<meta name="Author" content=" Данила Коротков ">
+	
+	<meta name="Copyright" content=" Данила Коротков ">
+	
+	<meta name="Address" content="danila.korotkov@gmail.com">
+
+	
+	
+	<meta property="og:locale" content="ru_RU">
+	
+	<meta property="og:type" content="article">
+	
+	<meta property="og:title" content=" Home ">
+	
+	<meta property="og:description" content="description">
+	
+	<meta property="og:image" content="img/img1.jpeg">
+	
+	<meta property="og:url" content="/index.html">
+	
+	<meta property="og:site_name" content=" Cafe ">
+
+	
+	
+	<meta name="twitter:card" content="summary">
+	
+	<meta name="twitter:site" content=" Данила Коротков ">
+	
+	<meta name="twitter:title" content=" Home ">
+	
+	<meta name="twitter:description" content="description">
+	
+	<meta name="twitter:image" content="img/img1.jpeg">
+
+	<link rel="stylesheet" href="css/header.min.css?_v=20240524212046">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240524212046">
+
+	
+	
+	
+	<script>
+		const html = document.documentElement
+		html.classList.add('fonts-loading')
+		if (sessionStorage.fontsLoaded) {
+			html.classList.remove('fonts-loading')
+			html.classList.add('fonts-loaded')
+		}
+
+		// Загружаем цветовую схему
+		const clrScheme = localStorage.getItem('color-scheme')
+		if (clrScheme) {
+			console.log(clrScheme)
+			document.querySelector('html').style.colorScheme = clrScheme
+		}
+	</script>
+	<title> Cafe  |  Home </title>
+</head>
+
+	<body class="body">
+		<header class="header">
+	<a class="skip-nav-link" href="#main-content">Skip navigation</a>
+	<div class="container header__container">
+		<a class="logo header__logo" href="/">{Finsweet</a>
+		<button class="hamburger" aria-label="Открыть основную навгацию" aria-controls="Mnavigation" aria-expanded="false">
+			<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4 7L7 7M20 7L11 7" stroke-width="1.5" stroke-linecap="round"/>
+				<path d="M20 17H17M4 17L13 17" stroke-width="1.5" stroke-linecap="round"/>
+				<path d="M4 12H7L20 12" stroke-width="1.5" stroke-linecap="round"/>
+			</svg>
+		</button>
+		<div class="header__space"></div>
+		<nav class="nav" aria-label="Main navigation" id="Mnavigation">
+			<button class="nav__close" data-close="true">
+				<svg role="img" aria-label="close navigation"><use xlink:href="img/icons/icons.svg#close"></use></svg>
+			</button>
+
+			<ul class="nav__box" id="navigation">
+				<li><a class="nav__item" href="/index.html" aria-current="page">Home</a></li>
+				<li><a class="nav__item" href="/menu.html">Menu</a></li>
+				<li><a class="nav__item" href="/about.html">About us</a></li>
+				<li><a class="nav__item" href="/story.html">Our Story</a></li>
+				<li><a class="nav__item" href="/blog.html">Blog</a></li>
+				<li><a class="nav__item" href="/contact.html">Contact</a></li>
+			</ul>
+			<fieldset class="scheme-switcher nav__scheme" title="Color scheme">
+				<legend class="clipped">Scheme</legend>
+				<input class="scheme-switcher__radio scheme-switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="light" alt>
+				<input class="scheme-switcher__radio scheme-switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="auto" checked="checked">
+				<input class="scheme-switcher__radio scheme-switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="dark">
+				<div class="scheme-switcher__focus"></div>
+			</fieldset>
+		</nav>
+	</div>
+</header>
+
+		<main class="main blog-page" id="main-content">
+			<div class="container-grid section">
+				<h1 class="blog-page__title">Featured Blogs</h1>
+				<section class="section featured-blogs">
+					<div class="container-grid">
+						<div class="section__2columns">
+							<article class="featured-blogs__main-item" style="background-image: url('./img/fblogs1.jpeg')" data-type="Trending">
+								<div class="featured-blogs__main-wrapper">
+									<h2 class="featured-blogs__main-item-title">A guide to Thai Curry</h2>
+									<footer class="featured-blogs__main-item-footer">
+										<div class="autor">
+											<div>
+												<p class="autor__title featured-blogs__autor-title">Andrew Jonson</p>
+												<time class="autor__time featured-blogs__autor-time" datetime="2021-01-27">27th January 2021</time>
+											</div>
+											<img class="autor__photo" src="./img/Andrew Jonson.jpeg" alt="Andrew Jonson photo">
+										</div>
+										<a class="arrow-link articles__arrow-link featured-blogs__main-link" href="/blogPage.html">
+											<span>Read More</span>
+											<svg role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+										</a>
+									</footer>
+								</div>
+							</article>
+
+							<dl class="featured-blogs__list">
+								<div class="featured-blogs__item">
+									<dt class="featured-blogs__title">You can move the text by dragging and dropping the text</dt>
+									<dd>
+										<picture><source srcset="./img/fblog2.webp" type="image/webp"><img class="featured-blogs__img" src="./img/fblog2.jpeg" alt="You can move the text by dragging and dropping the tex"></picture>
+										<div class="featured-blogs__item-text">Writing UX copies can be a little frustrating and confusing, and sometimes</div>
+									</dd>
+								</div>
+								<div class="featured-blogs__item">
+									<dt class="featured-blogs__title">Edit this text to make it your own. To edit, simply</dt>
+									<dd>
+										<picture><source srcset="./img/fblogs3.webp" type="image/webp"><img class="featured-blogs__img" src="./img/fblogs3.jpeg" alt="Edit this text to make it your own. To edit, simply"></picture>
+										<div class="featured-blogs__item-text">Writing UX copies can be a little frustrating and confusing, and sometimes</div>
+									</dd>
+								</div>
+								<div class="featured-blogs__item">
+									<dt class="featured-blogs__title">You can move the text by dragging and dropping the text</dt>
+									<dd>
+										<picture><source srcset="./img/fblogs4.webp" type="image/webp"><img class="featured-blogs__img" src="./img/fblogs4.jpeg" alt="You can move the text by dragging and dropping the tex"></picture>
+										<div class="featured-blogs__item-text">Writing UX copies can be a little frustrating and confusing, and sometimes</div>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</section>
+				<section class="section articles">
+					<div class="container-grid">
+						<h2 class="articles__title">All Articles</h2>
+						<ul class="grid-auto-columns articles__list">
+							<li class="articles__item">
+								<header class="articles__item-header">
+									<div class="autor">
+										<div>
+											<p class="articles__item-autor autor__title">Andrew Jonson</p>
+											<time class="articles__item-time autor__time" datetime="2021-01-27">27th January 2021</time>
+										</div>
+										<img class="articles__item-photo autor__photo" src="./img/Andrew Jonson.jpeg" alt="Andrew Jonson photo">
+									</div>
+								</header>
+								<h3 class="articles__item-title">A guide to Thai Curry</h3>
+
+								<img class="articles__item-img" src="./img/All Articles1.jpeg" alt="A guide to Thai Curry image">
+
+								<footer class="articles__item-footer">
+									<a class="arrow-link articles__arrow-link" href="/blogPage.html">
+										<span>Read More</span>
+										<svg role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+									</a>
+								</footer>
+							</li>
+							<li class="articles__item">
+								<header class="articles__item-header">
+									<div class="autor">
+										<div>
+											<p class="articles__item-autor autor__title">Andrew Jonson</p>
+											<time class="articles__item-time autor__time" datetime="2021-01-27">27th January 2021</time>
+										</div>
+										<img class="articles__item-photo autor__photo" src="./img/Andrew Jonson.jpeg" alt="Andrew Jonson photo">
+									</div>
+								</header>
+								<h3 class="articles__item-title">The best guacamole recipe with only 4 ingredients</h3>
+
+								<img class="articles__item-img" src="./img/All Articles2.jpeg" alt="A guide to Thai Curry image">
+
+								<footer class="articles__item-footer">
+									<a class="arrow-link articles__arrow-link" href="/blogPage.html">
+										<span>Read More</span>
+										<svg role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+									</a>
+								</footer>
+							</li>
+							<li class="articles__item">
+								<header class="articles__item-header">
+									<div class="autor">
+										<div>
+											<p class="articles__item-autor autor__title">Andrew Jonson</p>
+											<time class="articles__item-time autor__time" datetime="2021-01-27">27th January 2021</time>
+										</div>
+										<img class="articles__item-photo autor__photo" src="./img/Andrew Jonson.jpeg" alt="Andrew Jonson photo">
+									</div>
+								</header>
+								<h3 class="articles__item-title">How to store Tomatoes (and Whether to Refrigerate Them)</h3>
+
+								<img class="articles__item-img" src="./img/All Articles3.jpeg" alt="A guide to Thai Curry image">
+
+								<footer class="articles__item-footer">
+									<a class="arrow-link articles__arrow-link" href="/blogPage.html">
+										<span>Read More</span>
+										<svg role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+									</a>
+								</footer>
+							</li>
+							<li class="articles__item">
+								<header class="articles__item-header">
+									<div class="autor">
+										<div>
+											<p class="articles__item-autor autor__title">Andrew Jonson</p>
+											<time class="articles__item-time autor__time" datetime="2021-01-27">27th January 2021</time>
+										</div>
+										<img class="articles__item-photo autor__photo" src="./img/Andrew Jonson.jpeg" alt="Andrew Jonson photo">
+									</div>
+								</header>
+								<h3 class="articles__item-title">The Absolute Best Way to Cook French Fries</h3>
+
+								<img class="articles__item-img" src="./img/All Articles4.jpeg" alt="A guide to Thai Curry image">
+
+								<footer class="articles__item-footer">
+									<a class="arrow-link articles__arrow-link" href="/blogPage.html">
+										<span>Read More</span>
+										<svg role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+									</a>
+								</footer>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+	<section class="contact container-grid">
+		<div class="contact__container">
+			<h2 class="clipped">Conatact Us</h2>
+			<div class="contact__details">
+				<dl class="contact__detail">
+					<dt>Working Hour</dt>
+					<dd>
+						<p>
+							Sunday to Saturday<br>
+							<time datetime="09:00">09:00 AM</time> to <time datetime="23:00">11:00 PM</time>
+						</p>
+					</dd>
+				</dl>
+				<dl class="contact__detail">
+					<dt>Location</dt>
+					<dd>
+						<p>Street - 127, New York,<br>United States<br>546544</p>
+					</dd>
+				</dl>
+				<dl class="contact__detail">
+					<dt>Contact us</dt>
+					<dd>
+						<p>
+							<a href="tel:+123456789">+123456789</a><br>
+							<a href="mailto:hey@yourdomain.com">hey@yourdomain.com</a>
+						</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="contact__map">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1_u4ftXgs3T_OXo3p0dLcycjEUCPlYxU&ehbc=2E312F&noprof=1" width="99%" height="100%"></iframe>
+			</div>
+		</div>
+	</section>
+	<section class="fr-menu">
+		<h2 class="clipped">Footer navigation</h2>
+		<span class="logo fr-menu__logo">{Finsweet</span>
+		<nav class="fr-menu__nav" aria-label="Secondary navigation">
+			<ul class="fr-menu__box" id="Snavigation">
+				<li><a class="fr-menu__item" href="#" aria-current="page">Home</a></li>
+				<li><a class="fr-menu__item" href="#">Menu</a></li>
+				<li><a class="fr-menu__item" href="#">About us</a></li>
+				<li><a class="fr-menu__item" href="#">Our Story</a></li>
+				<li><a class="fr-menu__item" href="#">Blog</a></li>
+				<li><a class="fr-menu__item" href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</section>
+	<section class="bottom">
+		<h2 class="clipped">Additional Information</h2>
+		<div class="container-grid">
+			<div class="bottom__container">
+				<span class="bottom__info">© 2021 Finsweet | All&nbsp;rights&nbsp;reserved</span>
+				<ul class="bottom__icons">
+					<li class="bottom__icon" aria-label="link to facebook page">
+						<a href="#">
+							<svg role="img" aria-label="Facebook"><use xlink:href="img/icons/icons.svg#facebook"></use></svg>
+						</a>
+					</li>
+					<li class="bottom__icon" aria-label="link to Twitter page">
+						<a href="#">
+							<svg role="img" aria-label="Twitter"><use xlink:href="img/icons/icons.svg#twitter"></use></svg>
+						</a>
+					</li>
+					<li class="bottom__icon bottom__icon--inst">
+						<a href="#" aria-label="link to instagram page">
+							<svg role="img" aria-label="instagram"><use xlink:href="img/icons/icons.svg#instagram"></use></svg>
+						</a>
+					</li>
+					<li class="bottom__icon">
+						<a href="#" aria-label="link to linkedIn page">
+							<svg role="img" aria-label="linkedIn"><use xlink:href="img/icons/icons.svg#linkedIn"></use></svg>
+						</a>
+					</li>
+				</ul>
+				<div class="bottom__link-wrapper">
+					<a class="bottom__link arrow-link" href="https://dkorotkov.github.io/" target="_blank" rel="noopener noreferrer">
+						<span>dk</span>
+						<svg role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+ <script src="js/bundle.min.js?_v=20240524212046"></script>
+
+	</body>
+</html>

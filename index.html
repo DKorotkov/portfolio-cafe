@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<meta content="true" name="HandheldFriendly">
+	
+	
+	
+	<meta name="MobileOptimized" content="width">
+	
+	<meta content="yes" name="apple-mobile-web-app-capable">
+
+	
+	
+	
+	
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="description" content="description">
+	
+	<meta name="keywords" content="keywords">
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	<meta name="Author" content=" Данила Коротков ">
+	
+	<meta name="Copyright" content=" Данила Коротков ">
+	
+	<meta name="Address" content="danila.korotkov@gmail.com">
+
+	
+	
+	<meta property="og:locale" content="ru_RU">
+	
+	<meta property="og:type" content="article">
+	
+	<meta property="og:title" content=" Home ">
+	
+	<meta property="og:description" content="description">
+	
+	<meta property="og:image" content="img/img1.jpeg">
+	
+	<meta property="og:url" content="/index.html">
+	
+	<meta property="og:site_name" content=" Cafe ">
+
+	
+	
+	<meta name="twitter:card" content="summary">
+	
+	<meta name="twitter:site" content=" Данила Коротков ">
+	
+	<meta name="twitter:title" content=" Home ">
+	
+	<meta name="twitter:description" content="description">
+	
+	<meta name="twitter:image" content="img/img1.jpeg">
+
+	<link rel="stylesheet" href="css/header.min.css?_v=20240524212046">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240524212046">
+
+	
+	
+	
+	<script>
+		const html = document.documentElement
+		html.classList.add('fonts-loading')
+		if (sessionStorage.fontsLoaded) {
+			html.classList.remove('fonts-loading')
+			html.classList.add('fonts-loaded')
+		}
+
+		// Загружаем цветовую схему
+		const clrScheme = localStorage.getItem('color-scheme')
+		if (clrScheme) {
+			console.log(clrScheme)
+			document.querySelector('html').style.colorScheme = clrScheme
+		}
+	</script>
+	<title> Cafe  |  Home </title>
+</head>
+
+	<body class="body">
+		<header class="header">
+	<a class="skip-nav-link" href="#main-content">Skip navigation</a>
+	<div class="container header__container">
+		<a class="logo header__logo" href="/">{Finsweet</a>
+		<button class="hamburger" aria-label="Открыть основную навгацию" aria-controls="Mnavigation" aria-expanded="false">
+			<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4 7L7 7M20 7L11 7" stroke-width="1.5" stroke-linecap="round"/>
+				<path d="M20 17H17M4 17L13 17" stroke-width="1.5" stroke-linecap="round"/>
+				<path d="M4 12H7L20 12" stroke-width="1.5" stroke-linecap="round"/>
+			</svg>
+		</button>
+		<div class="header__space"></div>
+		<nav class="nav" aria-label="Main navigation" id="Mnavigation">
+			<button class="nav__close" data-close="true">
+				<svg role="img" aria-label="close navigation"><use xlink:href="img/icons/icons.svg#close"></use></svg>
+			</button>
+
+			<ul class="nav__box" id="navigation">
+				<li><a class="nav__item" href="/index.html" aria-current="page">Home</a></li>
+				<li><a class="nav__item" href="/menu.html">Menu</a></li>
+				<li><a class="nav__item" href="/about.html">About us</a></li>
+				<li><a class="nav__item" href="/story.html">Our Story</a></li>
+				<li><a class="nav__item" href="/blog.html">Blog</a></li>
+				<li><a class="nav__item" href="/contact.html">Contact</a></li>
+			</ul>
+			<fieldset class="scheme-switcher nav__scheme" title="Color scheme">
+				<legend class="clipped">Scheme</legend>
+				<input class="scheme-switcher__radio scheme-switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="light" alt>
+				<input class="scheme-switcher__radio scheme-switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="auto" checked="checked">
+				<input class="scheme-switcher__radio scheme-switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="dark">
+				<div class="scheme-switcher__focus"></div>
+			</fieldset>
+		</nav>
+	</div>
+</header>
+
+		<main class="main" id="main-content">
+			<section class="section sheader">
+				<div class="container-grid">
+					<div class="section__2columns sheader__container">
+						<div class="sheader__info">
+							<hgroup class="sheader__hgroup">
+								<h1 class="sheader__header">We serve high quality foods of all kinds.</h1>
+								<p class="section__info">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text.</p>
+							</hgroup>
+							<a class="btn menu__btn" href="/menu.html">
+								View Menu
+								<svg class="" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+							</a>
+							<dl class="sheader__infos">
+								<div>
+									<dd class="sheader__infos-header">Opening Times</dd>
+									<dt>Sunday to Saturday  l  09:00 AM to 11:00 PM</dt>
+								</div>
+								<div>
+									<dd class="sheader__infos-header">Location</dd>
+									<dt>
+										Master canteen, BBSR , Odisha <br>
+										752054
+									</dt>
+								</div>
+								<div>
+									<dd class="sheader__infos-header">Call us</dd>
+									<dt><a class="sheader__infos-link" href="tel:+9776462441">+9776462441</a></dt>
+								</div>
+							</dl>
+						</div>
+						<div class="sheader__addit">
+							<img class="sheader__img" src="./img/Header Image.jpeg" alt="Cup of coffe">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section more">
+				<div class="container-grid">
+					<div class="section__2columns section__2columns--right">
+						<div>
+							<p class="section__sub-title">KNOW MORE ABOUT US</p>
+							<hgroup class="">
+								<h2 class="more__title">We source sustainable&nbsp;& line caught Foods</h2>
+								<p class="section__info more__info">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text by dragging and dropping the text anywhere on the page.</p>
+							</hgroup>
+							<dl class="more__feature-list grid-auto-columns">
+								<div class="more__feature-item">
+									<dt>
+										<span class="more__feature-header">
+											<svg class="more__feature-icon" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#feature"></use></svg>
+											<p>10+ People</p>
+										</span>
+										<p>We are Small Team</p>
+									</dt>
+									<dd class="more__feature-info">Through True Rich Attended does no end it his mother since favourable.</dd>
+								</div>
+								<div class="more__feature-item">
+									<dt>
+										<span class="more__feature-header">
+											<svg class="more__feature-icon" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#feature"></use></svg>
+											<p>2014</p>
+										</span>
+										<p>We are From</p>
+									</dt>
+									<dd class="more__feature-info">Through True Rich Attended does no end it his mother since favourable.</dd>
+								</div>
+								<div class="more__feature-item">
+									<dt>
+										<span class="more__feature-header">
+											<svg class="more__feature-icon" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#feature"></use></svg>
+											<p>200k</p>
+										</span>
+										<p>We Served</p>
+									</dt>
+									<dd class="more__feature-info">Through True Rich Attended does no end it his mother since favourable.</dd>
+								</div>
+							</dl>
+							<a class="btn menu__btn" href="/menu.html">
+								View Menu
+								<svg class="" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+							</a>
+						</div>
+						<div class="section__2columns-images">
+							<picture><source srcset="./img/more1.webp" type="image/webp"><img src="./img/more1.jpeg" alt=""></picture>
+							<picture><source srcset="./img/more2.webp" type="image/webp"><img src="./img/more2.jpeg" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section serving">
+				<div class="container-grid">
+					<p class="section__sub-title">what WE ARE SERVING</p>
+					<hgroup class="section__hgroup">
+						<h2>We all have to eat, so why not do it beautifully?</h2>
+						<p class="section__info">Through True Rich Attended does no end it his mother since favourable real had half every him case in packages enquire we up ecstatic.. Through True Rich Attended does no end it his mother</p>
+					</hgroup>
+					<dl class="serving__cards grid-auto-columns">
+						<div class="serving__card">
+							<dt class="serving__card-header">
+								<div class="serving__card-icon">
+									<svg role="img" aria-label="Quafe Cake icon"><use xlink:href="img/icons/icons.svg#quafe"></use></svg>
+								</div>
+								<dfn class="serving__card-title">
+									<h3>Quafe Cake</h3>
+								</dfn>
+							</dt>
+							<dd class="serving__card-info">Through True Rich Attended no end it his mother since favourable real had half every him.</dd>
+						</div>
+						<div class="serving__card">
+							<dt class="serving__card-header">
+								<div class="serving__card-icon">
+									<svg role="img" aria-label="Cofee icon"><use xlink:href="img/icons/icons.svg#cofe"></use></svg>
+								</div>
+								<dfn class="serving__card-title">
+									<h3>Cofee</h3>
+								</dfn>
+							</dt>
+							<dd class="serving__card-info">Through True Rich Attended no end it his mother since favourable real had half every him.</dd>
+						</div>
+						<div class="serving__card">
+							<dt class="serving__card-header">
+								<div class="serving__card-icon">
+									<svg role="img" aria-label="Fast Food icon"><use xlink:href="img/icons/icons.svg#fast_food"></use></svg>
+								</div>
+								<dfn class="serving__card-title">
+									<h3>Fast Food</h3>
+								</dfn>
+							</dt>
+							<dd class="serving__card-info">Through True Rich Attended no end it his mother since favourable real had half every him.</dd>
+						</div>
+						<div class="serving__card">
+							<dt class="serving__card-header">
+								<div class="serving__card-icon">
+									<svg role="img" aria-label="Cocktails icon"><use xlink:href="img/icons/icons.svg#cocktails"></use></svg>
+								</div>
+								<dfn class="serving__card-title">
+									<h3>Cocktails</h3>
+								</dfn>
+							</dt>
+							<dd class="serving__card-info">Through True Rich Attended no end it his mother since favourable real had half every him.</dd>
+						</div>
+						<div class="serving__card">
+							<dt class="serving__card-header">
+								<div class="serving__card-icon">
+									<svg role="img" aria-label="Grill icon"><use xlink:href="img/icons/icons.svg#grill"></use></svg>
+								</div>
+								<dfn class="serving__card-title">
+									<h3>Grill</h3>
+								</dfn>
+							</dt>
+							<dd class="serving__card-info">Through True Rich Attended no end it his mother since favourable real had half every him.</dd>
+						</div>
+						<div class="serving__card">
+							<dt class="serving__card-header">
+								<div class="serving__card-icon">
+									<svg role="img" aria-label="Snacks icon"><use xlink:href="img/icons/icons.svg#snacks"></use></svg>
+								</div>
+								<dfn class="serving__card-title">
+									<h3>Snacks</h3>
+								</dfn>
+							</dt>
+							<dd class="serving__card-info">Through True Rich Attended no end it his mother since favourable real had half every him.</dd>
+						</div>
+					</dl>
+				</div>
+			</section>
+
+			<section class="section menu">
+				<div class="container-grid">
+					<p class="section__sub-title">OUR MENU</p>
+					<hgroup class="section__hgroup">
+						<h2>Discover our menu chart</h2>
+
+						<p class="section__info">Through True Rich Attended does no end it his mother since favourable real had half every him case in packages enquire we up ecstatic.. Through True Rich Attended does no end it his mother</p>
+					</hgroup>
+					<p class="menu__sub-title">Most Popular Picks</p>
+					<ul class="menu__list grid-auto-columns">
+						<li>
+							<article class="menu__item">
+								<hgroup class="menu__item-header">
+									<h3>Drp Cofee</h3>
+									<p class="menu__item-price">$08.85</p>
+								</hgroup>
+								<picture><source srcset="./img/menu1.webp" type="image/webp"><img class="menu__item-img" src="./img/menu1.jpeg" alt="Drp Cofee"></picture>
+							</article>
+						</li>
+						<li>
+							<article class="menu__item">
+								<hgroup class="menu__item-header">
+									<h3>Choco Cup Cake</h3>
+									<p class="menu__item-price">$4.85</p>
+								</hgroup>
+								<picture><source srcset="./img/menu2.webp" type="image/webp"><img class="menu__item-img" src="./img/menu2.jpeg" alt="Choco Cup Cake"></picture>
+							</article>
+						</li>
+						<li>
+							<article class="menu__item">
+								<hgroup class="menu__item-header">
+									<h3>Chicken Burger</h3>
+									<p class="menu__item-price">$8.85</p>
+								</hgroup>
+								<picture><source srcset="./img/menu3.webp" type="image/webp"><img class="menu__item-img" src="./img/menu3.jpeg" alt="Chicken Burger"></picture>
+							</article>
+						</li>
+						<li>
+							<article class="menu__item">
+								<hgroup class="menu__item-header">
+									<h3>French Fries</h3>
+									<p class="menu__item-price">$7.85</p>
+								</hgroup>
+								<picture><source srcset="./img/menu4.webp" type="image/webp"><img class="menu__item-img" src="./img/menu4.jpeg" alt="French Fries"></picture>
+							</article>
+						</li>
+						<li>
+							<article class="menu__item">
+								<hgroup class="menu__item-header">
+									<h3>Sandwitch</h3>
+									<p class="menu__item-price">$3.97</p>
+								</hgroup>
+								<picture><source srcset="./img/menu5.webp" type="image/webp"><img class="menu__item-img" src="./img/menu5.jpeg" alt="Sandwitch"></picture>
+							</article>
+						</li>
+						<li>
+							<article class="menu__item">
+								<hgroup class="menu__item-header">
+									<h3>Chinese Soup</h3>
+									<p class="menu__item-price">$8.85</p>
+								</hgroup>
+								<picture><source srcset="./img/menu6.webp" type="image/webp"><img class="menu__item-img" src="./img/menu6.jpeg" alt="Chinese Soup"></picture>
+							</article>
+						</li>
+					</ul>
+					<a class="btn menu__btn" href="/menu.html">
+						View Menu
+						<svg class="" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+					</a>
+				</div>
+			</section>
+
+			<section class="section quote">
+				<div class="container-grid">
+					<h2 class="clipped">Quote</h2>
+					<div class="container-grid__full-right quote__container">
+						<figure class="quote__figure">
+							<blockquote class="quote__blockquote">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text by dragging and dropping the text</blockquote>
+							<figcaption class="quote__caption">
+								<div class="quote__caption-wr">
+									<p class="quote__caption-name">Joheny Andro</p>
+									<cite class="quote__caption-cite">Bhubaneswar, Odisha</cite>
+								</div>
+								<div class="quote__caption-photo">
+									<img class="quote__caption-img" src="./img/Joheny Andro.jpeg" alt="Joheny Andro">
+								</div>
+							</figcaption>
+						</figure>
+						<div class="quote__video-wrapper">
+							<video class="quote__video" preload="./img/video_preload.jpeg" style="background-image: url('./img/video_preload.jpeg')" playsinline muted>
+								<source src="./files/video/2464838_grind_grinding_beans_1920x1080.mp4" type="video/mp4">
+							</video>
+							<button class="quote__video-icon">
+								<svg aria-label="play video" role="img"><use xlink:href="img/icons/icons.svg#play"></use></svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section blog">
+				<div class="container-grid">
+					<h2 class="section__header">Read Our Lastest Blog</h2>
+					<div class="blog__cards grid-auto-columns">
+						<article class="blog__card">
+							<a class="blog__card-link" href="/blogPage.html">
+								<div class="blog__card-wrapper">
+									<time class="blog__card-header" datetime="2021-06-21"> 21 Jun 2021 </time>
+
+									<h1 class="blog__card-title">Extra Thick Homemad Pizza Sauce</h1>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+								</div>
+								<picture><source srcset="./img/blog1.webp" type="image/webp"><img class="blog__card-footer" src="./img/blog1.jpeg" alt="coffe"></picture>
+							</a>
+						</article>
+
+						<article class="blog__card">
+							<a class="blog__card-link" href="/blogPage.html">
+								<div class="blog__card-wrapper">
+									<time class="blog__card-header" datetime="2021-06-21"> 21 Jun 2021 </time>
+
+									<h1 class="blog__card-title">The Best Way to Store Fresh Herbs</h1>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+								</div>
+								<picture><source srcset="./img/blog2.webp" type="image/webp"><img class="blog__card-footer" src="./img/blog2.jpeg" alt="coffe"></picture>
+							</a>
+						</article>
+
+						<article class="blog__card">
+							<a class="blog__card-link" href="/blogPage.html">
+								<div class="blog__card-wrapper">
+									<time class="blog__card-header" datetime="2021-06-21"> 21 Jun 2021 </time>
+
+									<h1 class="blog__card-title">5 ways to prepare porridge</h1>
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+								</div>
+								<picture><source srcset="./img/blog3.webp" type="image/webp"><img class="blog__card-footer" src="./img/blog3.jpeg" alt="coffe"></picture>
+							</a>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+	<section class="contact container-grid">
+		<div class="contact__container">
+			<h2 class="clipped">Conatact Us</h2>
+			<div class="contact__details">
+				<dl class="contact__detail">
+					<dt>Working Hour</dt>
+					<dd>
+						<p>
+							Sunday to Saturday<br>
+							<time datetime="09:00">09:00 AM</time> to <time datetime="23:00">11:00 PM</time>
+						</p>
+					</dd>
+				</dl>
+				<dl class="contact__detail">
+					<dt>Location</dt>
+					<dd>
+						<p>Street - 127, New York,<br>United States<br>546544</p>
+					</dd>
+				</dl>
+				<dl class="contact__detail">
+					<dt>Contact us</dt>
+					<dd>
+						<p>
+							<a href="tel:+123456789">+123456789</a><br>
+							<a href="mailto:hey@yourdomain.com">hey@yourdomain.com</a>
+						</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="contact__map">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1_u4ftXgs3T_OXo3p0dLcycjEUCPlYxU&ehbc=2E312F&noprof=1" width="99%" height="100%"></iframe>
+			</div>
+		</div>
+	</section>
+	<section class="fr-menu">
+		<h2 class="clipped">Footer navigation</h2>
+		<span class="logo fr-menu__logo">{Finsweet</span>
+		<nav class="fr-menu__nav" aria-label="Secondary navigation">
+			<ul class="fr-menu__box" id="Snavigation">
+				<li><a class="fr-menu__item" href="#" aria-current="page">Home</a></li>
+				<li><a class="fr-menu__item" href="#">Menu</a></li>
+				<li><a class="fr-menu__item" href="#">About us</a></li>
+				<li><a class="fr-menu__item" href="#">Our Story</a></li>
+				<li><a class="fr-menu__item" href="#">Blog</a></li>
+				<li><a class="fr-menu__item" href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</section>
+	<section class="bottom">
+		<h2 class="clipped">Additional Information</h2>
+		<div class="container-grid">
+			<div class="bottom__container">
+				<span class="bottom__info">© 2021 Finsweet | All&nbsp;rights&nbsp;reserved</span>
+				<ul class="bottom__icons">
+					<li class="bottom__icon" aria-label="link to facebook page">
+						<a href="#">
+							<svg role="img" aria-label="Facebook"><use xlink:href="img/icons/icons.svg#facebook"></use></svg>
+						</a>
+					</li>
+					<li class="bottom__icon" aria-label="link to Twitter page">
+						<a href="#">
+							<svg role="img" aria-label="Twitter"><use xlink:href="img/icons/icons.svg#twitter"></use></svg>
+						</a>
+					</li>
+					<li class="bottom__icon bottom__icon--inst">
+						<a href="#" aria-label="link to instagram page">
+							<svg role="img" aria-label="instagram"><use xlink:href="img/icons/icons.svg#instagram"></use></svg>
+						</a>
+					</li>
+					<li class="bottom__icon">
+						<a href="#" aria-label="link to linkedIn page">
+							<svg role="img" aria-label="linkedIn"><use xlink:href="img/icons/icons.svg#linkedIn"></use></svg>
+						</a>
+					</li>
+				</ul>
+				<div class="bottom__link-wrapper">
+					<a class="bottom__link arrow-link" href="https://dkorotkov.github.io/" target="_blank" rel="noopener noreferrer">
+						<span>dk</span>
+						<svg role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+ <script src="js/bundle.min.js?_v=20240524212046"></script>
+
+	</body>
+</html>
+
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<meta content="true" name="HandheldFriendly">
+	
+	
+	
+	<meta name="MobileOptimized" content="width">
+	
+	<meta content="yes" name="apple-mobile-web-app-capable">
+
+	
+	
+	
+	
+	<meta name="format-detection" content="telephone=no">
+	
+	<meta name="description" content="description">
+	
+	<meta name="keywords" content="keywords">
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	<meta name="Author" content=" Данила Коротков ">
+	
+	<meta name="Copyright" content=" Данила Коротков ">
+	
+	<meta name="Address" content="danila.korotkov@gmail.com">
+
+	
+	
+	<meta property="og:locale" content="ru_RU">
+	
+	<meta property="og:type" content="article">
+	
+	<meta property="og:title" content=" Home ">
+	
+	<meta property="og:description" content="description">
+	
+	<meta property="og:image" content="img/img1.jpeg">
+	
+	<meta property="og:url" content="/index.html">
+	
+	<meta property="og:site_name" content=" Cafe ">
+
+	
+	
+	<meta name="twitter:card" content="summary">
+	
+	<meta name="twitter:site" content=" Данила Коротков ">
+	
+	<meta name="twitter:title" content=" Home ">
+	
+	<meta name="twitter:description" content="description">
+	
+	<meta name="twitter:image" content="img/img1.jpeg">
+
+	<link rel="stylesheet" href="css/header.min.css?_v=20240524212046">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240524212046">
+
+	
+	
+	
+	<script>
+		const html = document.documentElement
+		html.classList.add('fonts-loading')
+		if (sessionStorage.fontsLoaded) {
+			html.classList.remove('fonts-loading')
+			html.classList.add('fonts-loaded')
+		}
+
+		// Загружаем цветовую схему
+		const clrScheme = localStorage.getItem('color-scheme')
+		if (clrScheme) {
+			console.log(clrScheme)
+			document.querySelector('html').style.colorScheme = clrScheme
+		}
+	</script>
+	<title> Cafe  |  Home </title>
+</head>
+
+	<body class="body">
+		<header class="header">
+	<a class="skip-nav-link" href="#main-content">Skip navigation</a>
+	<div class="container header__container">
+		<a class="logo header__logo" href="/">{Finsweet</a>
+		<button class="hamburger" aria-label="Открыть основную навгацию" aria-controls="Mnavigation" aria-expanded="false">
+			<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4 7L7 7M20 7L11 7" stroke-width="1.5" stroke-linecap="round"/>
+				<path d="M20 17H17M4 17L13 17" stroke-width="1.5" stroke-linecap="round"/>
+				<path d="M4 12H7L20 12" stroke-width="1.5" stroke-linecap="round"/>
+			</svg>
+		</button>
+		<div class="header__space"></div>
+		<nav class="nav" aria-label="Main navigation" id="Mnavigation">
+			<button class="nav__close" data-close="true">
+				<svg role="img" aria-label="close navigation"><use xlink:href="img/icons/icons.svg#close"></use></svg>
+			</button>
+
+			<ul class="nav__box" id="navigation">
+				<li><a class="nav__item" href="/index.html" aria-current="page">Home</a></li>
+				<li><a class="nav__item" href="/menu.html">Menu</a></li>
+				<li><a class="nav__item" href="/about.html">About us</a></li>
+				<li><a class="nav__item" href="/story.html">Our Story</a></li>
+				<li><a class="nav__item" href="/blog.html">Blog</a></li>
+				<li><a class="nav__item" href="/contact.html">Contact</a></li>
+			</ul>
+			<fieldset class="scheme-switcher nav__scheme" title="Color scheme">
+				<legend class="clipped">Scheme</legend>
+				<input class="scheme-switcher__radio scheme-switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="light" alt>
+				<input class="scheme-switcher__radio scheme-switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="auto" checked="checked">
+				<input class="scheme-switcher__radio scheme-switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="dark">
+				<div class="scheme-switcher__focus"></div>
+			</fieldset>
+		</nav>
+	</div>
+</header>
+
+		<main class="main" id="main-content">
+			<section class="section more">
+				<div class="container-grid">
+					<div class="section__2columns section__2columns--right">
+						<div>
+							<p class="section__sub-title">KNOW MORE ABOUT US</p>
+							<hgroup class="">
+								<h2 class="more__title">We source sustainable&nbsp;& line caught Foods</h2>
+								<p class="section__info more__info">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text by dragging and dropping the text anywhere on the page.</p>
+							</hgroup>
+							<dl class="more__feature-list grid-auto-columns">
+								<div class="more__feature-item">
+									<dt>
+										<span class="more__feature-header">
+											<svg class="more__feature-icon" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#feature"></use></svg>
+											<p>10+ People</p>
+										</span>
+										<p>We are Small Team</p>
+									</dt>
+									<dd class="more__feature-info">Through True Rich Attended does no end it his mother since favourable.</dd>
+								</div>
+								<div class="more__feature-item">
+									<dt>
+										<span class="more__feature-header">
+											<svg class="more__feature-icon" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#feature"></use></svg>
+											<p>2014</p>
+										</span>
+										<p>We are From</p>
+									</dt>
+									<dd class="more__feature-info">Through True Rich Attended does no end it his mother since favourable.</dd>
+								</div>
+								<div class="more__feature-item">
+									<dt>
+										<span class="more__feature-header">
+											<svg class="more__feature-icon" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#feature"></use></svg>
+											<p>200k</p>
+										</span>
+										<p>We Served</p>
+									</dt>
+									<dd class="more__feature-info">Through True Rich Attended does no end it his mother since favourable.</dd>
+								</div>
+							</dl>
+						</div>
+						<div class="section__2columns-images">
+							<picture><source srcset="./img/about1.webp" type="image/webp"><img src="./img/about1.jpeg" alt=""></picture>
+							<picture><source srcset="./img/about2.webp" type="image/webp"><img src="./img/about2.jpeg" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section slogan">
+				<div class="container-grid">
+					<div class="slogan__container" style="background-image: url(./img/about3.jpeg)">
+						<div class="slogan__wrapper">
+							<h1 class="slogan__header">One of the best Cafes in <mark class="section__mark">New York</mark></h1>
+							<p>Through True Rich Attended does no end it his mother since favourable real had half every him case in packages enquire we up ecstatic.. Through True Rich Attended does no end it his mother</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="history">
+				<div class="container-grid">
+					<div class="history__container">
+						<h2 class="history__title">Our History</h2>
+						<dl class="history__list grid-auto-columns">
+							<div class="history__item">
+								<dt>
+									<hgroup>
+										<span class="history__item-year">1998</span>
+										<h3 class="history__item-title">Milestone One</h3>
+									</hgroup>
+								</dt>
+								<dd>Through True Rich Attended does no end it his mother since favourable.</dd>
+							</div>
+							<div class="history__item">
+								<dt>
+									<hgroup>
+										<span class="history__item-year">2005</span>
+										<h3 class="history__item-title">Milestone Two</h3>
+									</hgroup>
+								</dt>
+								<dd>Through True Rich Attended does no end it his mother since favourable.</dd>
+							</div>
+							<div class="history__item">
+								<dt>
+									<hgroup>
+										<span class="history__item-year">2012</span>
+										<h3 class="history__item-title">Milestone Three</h3>
+									</hgroup>
+								</dt>
+								<dd>Through True Rich Attended does no end it his mother since favourable.</dd>
+							</div>
+							<div class="history__item">
+								<dt>
+									<hgroup>
+										<span class="history__item-year">2021</span>
+										<h3 class="history__item-title">Milestone Four</h3>
+									</hgroup>
+								</dt>
+								<dd>Through True Rich Attended does no end it his mother since favourable.</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</section>
+
+			<section class="section stands">
+				<div class="container-grid">
+					<div class="section__2columns">
+						<h2 class="stands__title">Things our company stands for</h2>
+						<hgroup>
+							<h3 class="stands__subtitle">Edit this text to make it your own. To edit, simply click directly</h3>
+							<p>
+								Writing UX copies can be a little frustrating and confusing, and sometimes we are unsure about how to get the right word. To crack the code for the UX copies, we at Zeta Design wanted to build a Figma plugin for the larger design community. The plugin is called the Ghost
+								UXWriter and has a set of UX copies cataloged and categorized with a voice and tone variation ranging from plain, casual to playful. The intention to build this Figma plugin originated from our Medium blog post, ‘Designing voice and tone for error messages.
+							</p>
+						</hgroup>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+	<section class="contact container-grid">
+		<div class="contact__container">
+			<h2 class="clipped">Conatact Us</h2>
+			<div class="contact__details">
+				<dl class="contact__detail">
+					<dt>Working Hour</dt>
+					<dd>
+						<p>
+							Sunday to Saturday<br>
+							<time datetime="09:00">09:00 AM</time> to <time datetime="23:00">11:00 PM</time>
+						</p>
+					</dd>
+				</dl>
+				<dl class="contact__detail">
+					<dt>Location</dt>
+					<dd>
+						<p>Street - 127, New York,<br>United States<br>546544</p>
+					</dd>
+				</dl>
+				<dl class="contact__detail">
+					<dt>Contact us</dt>
+					<dd>
+						<p>
+							<a href="tel:+123456789">+123456789</a><br>
+							<a href="mailto:hey@yourdomain.com">hey@yourdomain.com</a>
+						</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="contact__map">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1_u4ftXgs3T_OXo3p0dLcycjEUCPlYxU&ehbc=2E312F&noprof=1" width="99%" height="100%"></iframe>
+			</div>
+		</div>
+	</section>
+	<section class="fr-menu">
+		<h2 class="clipped">Footer navigation</h2>
+		<span class="logo fr-menu__logo">{Finsweet</span>
+		<nav class="fr-menu__nav" aria-label="Secondary navigation">
+			<ul class="fr-menu__box" id="Snavigation">
+				<li><a class="fr-menu__item" href="#" aria-current="page">Home</a></li>
+				<li><a class="fr-menu__item" href="#">Menu</a></li>
+				<li><a class="fr-menu__item" href="#">About us</a></li>
+				<li><a class="fr-menu__item" href="#">Our Story</a></li>
+				<li><a class="fr-menu__item" href="#">Blog</a></li>
+				<li><a class="fr-menu__item" href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</section>
+	<section class="bottom">
+		<h2 class="clipped">Additional Information</h2>
+		<div class="container-grid">
+			<div class="bottom__container">
+				<span class="bottom__info">© 2021 Finsweet | All&nbsp;rights&nbsp;reserved</span>
+				<ul class="bottom__icons">
+					<li class="bottom__icon" aria-label="link to facebook page">
+						<a href="#">
+							<svg role="img" aria-label="Facebook"><use xlink:href="img/icons/icons.svg#facebook"></use></svg>
+						</a>
+					</li>
+					<li class="bottom__icon" aria-label="link to Twitter page">
+						<a href="#">
+							<svg role="img" aria-label="Twitter"><use xlink:href="img/icons/icons.svg#twitter"></use></svg>
+						</a>
+					</li>
+					<li class="bottom__icon bottom__icon--inst">
+						<a href="#" aria-label="link to instagram page">
+							<svg role="img" aria-label="instagram"><use xlink:href="img/icons/icons.svg#instagram"></use></svg>
+						</a>
+					</li>
+					<li class="bottom__icon">
+						<a href="#" aria-label="link to linkedIn page">
+							<svg role="img" aria-label="linkedIn"><use xlink:href="img/icons/icons.svg#linkedIn"></use></svg>
+						</a>
+					</li>
+				</ul>
+				<div class="bottom__link-wrapper">
+					<a class="bottom__link arrow-link" href="https://dkorotkov.github.io/" target="_blank" rel="noopener noreferrer">
+						<span>dk</span>
+						<svg role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+ <script src="js/bundle.min.js?_v=20240524212046"></script>
+
+	</body>
+</html>
