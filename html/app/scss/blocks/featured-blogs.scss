@@ -50,8 +50,17 @@
 	}
 
 	&__main-item-title {
+		color: var(--clr-white);
 		margin-top: auto;
 		margin-bottom: em(40, 48);
+	}
+
+	&__autor-title {
+		color: var(--clr-white) !important;
+	}
+
+	&__autor-time {
+		color: var(--clr-gray) !important;
 	}
 
 	&__main-item-footer {
