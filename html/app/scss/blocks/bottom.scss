@@ -1,7 +1,7 @@
 @use "__config" as *;
 
 .bottom {
-	border-top: rem(1) solid var(--scheme-bg-add);
+	border-top: rem(1) solid var(--bd-color);
 
 	&__container {
 		display: flex;

@@ -55,6 +55,13 @@
 		margin-bottom: em(40, 48);
 	}
 
+	&__main-link {
+		color: var(--clr-white);
+		& svg {
+			fill: currentColor !important;
+		}
+	}
+
 	&__autor-title {
 		color: var(--clr-white) !important;
 	}
