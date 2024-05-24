@@ -1,0 +1,64 @@
+@use "__config" as *;
+
+.blog-inner {
+
+	&__autor {
+		--bd-color: light-dark(#e7e5e5, #414141);
+		justify-self: center;
+		padding-bottom: rem(24);
+		padding-inline: rem(30);
+		border-bottom: rem(1) solid var(--bd-color);
+	}
+
+	&__autor-info {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__text-wrapper {
+		max-width: rem(842);
+		justify-self: center;
+	}
+
+	h1:not([class]) {
+		text-align: center;
+		font-size: var(--fs-48);
+		margin-top: em(56, 48) ;
+		margin-bottom: em(80, 48) ;
+	}
+	h2:not([class]) {
+		font-size: var(--fs-32);
+
+		margin-top: em(40, 32);
+		margin-bottom: em(24, 32);
+	}
+	h3:not([class]) {
+		font-size: var(--fs-20);
+		margin-top: em(40, 32);
+		margin-bottom: em(24, 32);
+	}
+	p:not([class]) {
+		margin-bottom: em(16, 16);
+	}
+	img:not([class]) {
+		width: 100%;
+		height: auto;
+		min-height: rem(200);
+		max-height: rem(488);
+	}
+}
+
+@media (width > $headerBp) {
+	.blog-inner {
+		&__autor {
+			padding-inline: rem(115);
+		}
+
+		&__autor-info {
+			gap: rem(24);
+		}
+
+		
+	}
+}
