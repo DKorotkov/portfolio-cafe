@@ -1,4 +1,5 @@
 node_modules
+dist
 *.code-workspace
 html.code-workspace
 package-lock.json
