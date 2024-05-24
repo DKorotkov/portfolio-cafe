@@ -1,4 +1,9 @@
-// Для валидации формы на сайте
+/**
+ *
+ * Для валидации формы на сайте
+ * Вызов формы через FormValid.init()
+ */
+
 export default class FormValid {
 	constructor(options) {
 		this.constructorOptions = options
@@ -13,16 +18,16 @@ export default class FormValid {
 			invalidClassName: 'invalid',
 			withValueClassName: 'not-empty',
 			errors: {
-				required: 'Заполните обязательное поле',
-				email: 'Пожалуйста, введите правильный email',
-				type: 'Не соответствует формату поля',
-				pattern: 'Не соответствует формату поля',
-				tooShort: 'Слишком короткое',
-				tooLong: 'Слишком динное',
+				required: 'Fill out the required field',
+				email: 'Please enter the right email',
+				type: 'Does not correspond to the field format',
+				pattern: 'Does not correspond to the field format',
+				tooShort: 'Too short',
+				tooLong: 'Too wild',
 				stepMismatch: 'Неверный шаг (введенный диапозон)',
 				rangeUnderflow: 'Меньше диапозона',
 				rangeOverflow: 'Больше диапозона',
-				customError: 'Ошибка',
+				customError: 'Error',
 				badInput: 'badInput',
 			},
 		}
@@ -157,10 +162,6 @@ export default class FormValid {
 		errorElements[0].previousSibling.focus()
 	}
 }
-
-// -----------Проверка валидация формы-------------------
-FormValid.init()
-// ------------------------------------------------------
 
 // Вынести этот модуль ввиде отдельного проекта, вывести на гитхаб с описанием
 

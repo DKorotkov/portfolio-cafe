@@ -30,13 +30,19 @@
 									<form class="contact-page__form form" action="mailto:doubled@bk.ru" method="post" name="contact" enctype="text/plain">
 										<p class="contact-page__form-info">Fill up the Form and ou team will get back to within 24 hrs</p>
 										<div class="contact-page__form-2col">
-											<label class="clipped" for="name">Name</label>
-											<input class="form__input" type="text" name="name" placeholder="Name" required />
-											<label class="clipped" for="email">Email</label>
-											<input class="form__input" type="email" name="email" placeholder="Email" required />
+											<label class="form__label" for="name">
+												<span class="clipped">Name</span>
+												<input class="form__input" type="text" name="name" placeholder="Name" required />
+											</label>
+											<label class="form__label" for="email">
+												<span class="clipped">Email</span>
+												<input class="form__input" type="email" name="email" placeholder="Email" required />
+											</label>
 										</div>
-										<label class="clipped" for="message">message</label>
-										<textarea class="form__input form__textarea" name="message" placeholder="Message"></textarea>
+										<label class="form__label" for="message">
+											<span class="clipped">message</span>
+											<textarea class="form__input form__textarea" name="message" placeholder="Message" required></textarea>
+										</label>
 										<button class="btn btn--brown" type="submit">
 											Send Message
 											<svg class="" role="img" aria-label=""><use xlink:href="img/icons/icons.svg#arrow"></use></svg>

@@ -1,6 +1,12 @@
 @use "__config" as *;
 
 .form {
+   
+   &__label {
+      display: grid;
+      position: relative;
+   }
+
    &__input {
       
 		appearance: none;
@@ -36,8 +42,12 @@
    }
 
    &__error {
+         position: absolute;
+         bottom: -#{rem(20)};
       //----удалить
+         font-size: var(--fs-12);
          color: var(--clr-error);
+         margin-top: rem(10);
       //-----------
    }
 
