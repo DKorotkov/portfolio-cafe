@@ -1,27 +1,30 @@
 @use "__config" as *;
 
 .form {
-   //----удалить
-   display: grid;
-   gap: 2rem;
-   //-----------
-
    &__input {
       
+		appearance: none;
+		flex: 1;
+		background-color: transparent;
+		border: rem(1) solid var(--bd-color);
+		padding-inline: em(32, 16);
+		padding-block: em(14, 16);
+   }
+
+   &__input::placeholder {
+      color: var(--scheme-headers);
    }
 
    &__input:where(:not([type="checkbox"], [type="radio"])) {
-      outline: 0; // использовать в случае, если у инпута задан стиль активного элемента 
+      outline: 0; 
    }
 
    &__input:where(:focus, :focus-visible) {
-      //----удалить
-      border-color: var(--clr-primary);
-      //-----------
+      border-color: var(--clr-accent);
    }
 
    &__input:disabled {
-
+      // border-color: var(--clr-);
    }
 
    &__input--not-empty {
@@ -36,5 +39,10 @@
       //----удалить
          color: var(--clr-error);
       //-----------
+   }
+
+   &__textarea {
+      resize: none;
+      height: rem(150);
    }
 }

@@ -1,0 +1,24 @@
+@use "__config" as *;
+
+.contact-page {
+	&__title {
+		font-size: var(--fs-48);
+		margin-bottom: em(24, 48);
+	}
+
+	&__form {
+		display: grid;
+		gap: rem(24);
+	}
+
+	&__form-info {
+		margin-bottom: em(40, 16);
+	}
+
+	&__form-2col {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(32);
+	}
+
+}

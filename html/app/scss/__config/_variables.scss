@@ -47,9 +47,10 @@ $sectionBp: 430px;
    --clr-gray-100: #fafafa;
    --clr-gray-400: #494848;
    --clr-gray: #B8B8B8;
-   --clr-brown: #261E1D;
    --clr-brown-300: #8f6e56;
-
+   --clr-brown: #261E1D;
+   --clr-brown-800: #27252D;
+   
    --clr-white: #fff;
    --clr-black: #000;
    --clr-blue: #C4E4EA;
@@ -92,6 +93,18 @@ $sectionBp: 430px;
    @each $keyColor, $valueColor in $colors {
       --clr-#{$keyColor} : #{$valueColor};
    }
+}
+
+
+// _____________________Цветовые схемы_________________________________
+:root {
+   --scheme-bg-main: light-dark(var(--clr-gray-100),  var(--clr-bg-main)) ;
+   --scheme-headers: light-dark(var(--clr-black), var(--clr-white));
+   --scheme-text: light-dark(var(--clr-gray-400), var(--clr-gray));
+   --scheme-bg-add: light-dark(var(--clr-accent-500), var(--clr-black-300));
+   --scheme-blue: light-dark(var(--clr-blue-600), var(--clr-blue));
+   --bd-color: light-dark(#e7e5e5, #414141);
+   color-scheme: light dark;
 }
 
 // _____________________Шрифт_________________________________
@@ -159,14 +172,4 @@ $sectionBp: 430px;
    :root {
       --mg-section: #{rem(160)};
    }
-}
-
-// _____________________Цветовые схемы_________________________________
-:root {
-   --scheme-bg-main: light-dark(var(--clr-gray-100),  var(--clr-bg-main)) ;
-   --scheme-headers: light-dark(var(--clr-black), var(--clr-white));
-   --scheme-text: light-dark(var(--clr-gray-400), var(--clr-gray));
-   --scheme-bg-add: light-dark(var(--clr-accent-500), var(--clr-black-300));
-   --scheme-blue: light-dark(var(--clr-blue-600), var(--clr-blue));
-   color-scheme: light dark;
 }

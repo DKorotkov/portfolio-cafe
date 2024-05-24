@@ -1,18 +1,20 @@
 @use "__config" as *;
 
 .btn {
+   --bg-clr: var(--clr-accent);
+   --clr: var(--clr-black);
    display: flex;
-   align-items: center;
+   align-items: baseline;
    gap: rem(8);
    width: fit-content;
-   background-color: var(--clr-accent);
+   background-color: var(--bg-clr);
    border: none;
    padding: em(12, 16) em(24, 16);
    margin: 0;
    cursor: pointer;
    text-decoration: none;
    font-weight: var(--fw-medium);
-   color: var(--clr-black);
+   color: var(--clr);
    fill: currentColor;
    transition: all 0.5s ease;
 
@@ -33,5 +35,10 @@
 
    &:disabled {
       background-color: var(--scheme-text);
+   }
+
+   &--brown {
+      --bg-clr: var(--clr-brown-800);
+      --clr: var(--clr-white);
    }
 }
