@@ -6,3 +6,4 @@ tsconfig.json
 gulp
 gulpfile.js
 /*.json
+*.sh
